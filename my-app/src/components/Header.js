@@ -6,9 +6,11 @@ function Header() {
 
       <div className="header-1st-line">
         <div className="logo">
+
           
+           <div className="logo-img-container">
           <div className="logo-img">
-            <div className="logo-img-container"></div>
+           </div>
             </div>
 
             <div className="logo-text">logo text</div>
@@ -40,5 +42,5 @@ function Header() {
       </div>
     );
   }
-  
+
   export default Header;

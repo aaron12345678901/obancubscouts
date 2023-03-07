@@ -1,0 +1,51 @@
+.Homeevents{
+   
+   
+}
+
+.home-events-control{
+padding-top: 1rem;
+display: flex;
+flex-direction: row;
+height: 2rem;
+}
+
+.arrow-container-1{
+   
+    height: 2rem;
+    width: 2rem;
+}
+
+.arrow-container-1-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/homeevents/arrow1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.arrow-container-2{
+
+    height: 2rem;
+    width: 2rem;
+}
+
+.arrow-container-2-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/homeevents/arrow2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.date{
+    height: 100%;
+    line-height: 10%;
+    padding-left: 0.5rem;
+} 
+
+
+

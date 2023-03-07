@@ -7,3 +7,71 @@ background-color:#CFB6F2 ;
 padding-top: 1rem;
 text-align: center;
 }
+
+
+.first-container{
+    
+    height: 25rem;
+    
+}
+
+.image-container-1{
+    
+    width: 80%;
+    height: 80%;
+    margin-left: 8rem;
+   
+   
+    transform: translateY(20%);
+    background-image: url(../images/homepage/home1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container-1-text{
+    position: absolute;
+    top: -10%;
+    left: -15%;
+    width: 40%;
+    border: 3px solid #73AD21;
+    z-index: 1;
+    background: rgba(171, 224, 245, 0.548);
+    border-radius: 5%;
+    box-shadow: 2.5px 5px #03030338;
+    text-align: center;
+    border: 1px solid #4D0BAA;
+}
+
+.second-container{
+   
+    height: 25rem;
+    
+}
+
+.image-container-2{
+    
+    width: 80%;
+    height: 80%;
+    margin-left: 2rem;
+    margin-top: 2rem;   
+    transform: translateY(5%);
+    background-image: url(../images/homepage/home2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container-2-text{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    width: 40%;
+    border: 3px solid #73AD21;
+    z-index: 1;
+    background: rgba(171, 224, 245, 0.548);
+    border-radius: 5%;
+    box-shadow: 2.5px 5px #03030338;
+    text-align: center;
+    border: 1px solid #4D0BAA;
+}
