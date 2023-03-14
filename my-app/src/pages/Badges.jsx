@@ -15,6 +15,7 @@ function Badges() {
 
         <div className="badge1">
             <img src={badge1} alt="" />
+            <p>fdsbgfdb</p>
         </div>
 
         <div className="badge2">

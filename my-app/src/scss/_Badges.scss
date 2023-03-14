@@ -6,8 +6,8 @@
 
 .first-badges{
 border: 2px solid black;
-width: 100;
-height: 10rem;
+width: 100vw;
+height: 20rem;
 display: flex;
 flex-direction: row;
 gap: 2rem;
@@ -17,12 +17,11 @@ justify-content: space-evenly;
 
 .badge1{
     
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Badges/badge2.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
     
 }
 
