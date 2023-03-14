@@ -1,10 +1,20 @@
+import { useEffect, useRef } from "react";
+
+
 function Homeevents() {
   // function showDate(){
-  //   const monthNames = ["January", "February", "March", "April", "May", "June",
-  //   "July", "August", "September", "October", "November", "December"];
-  //   const d = new Date();
-  //   document.getElementById("date").innerHTML = monthNames[d.getMonth()];
-  // }
+
+    const date = useRef();
+
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+    const d = new Date();
+    console.log(date)
+    
+ useEffect(() => {
+  date.current.innerHTML = monthNames[d.getMonth()];
+
+});
   // showDate();
 
   // const date1 = new Date();
@@ -25,7 +35,7 @@ function Homeevents() {
         </div>
 
         <div className="date">
-          <p id="date">today</p>
+          <p ref={date}>today</p>
         </div>
         <div className="date2">3rd-july</div>
       </div>

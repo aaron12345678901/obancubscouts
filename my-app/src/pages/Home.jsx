@@ -27,13 +27,29 @@ function Home() {
           <div className="image-container-2">
             <div className="container-2-text">
               <p>
-              Completing Challenge Awards lets you do more, learn more and be more. See what’s 
-              on offer and start your journey to the top.
+                Completing Challenge Awards lets you do more, learn more and be
+                more. See what’s on offer and start your journey to the top.
               </p>
             </div>
           </div>
         </div>
 
+        <div className="home-para">
+          <p>
+            Cubs uniform and badge placement You don't need a uniform to join.
+            But once you've settled in, you'll start speedily earning badges,
+            and you'll need to know where to put them!
+          </p>
+        </div>
+
+        <div className="home-para-2">
+          <p>
+            most of our leaders are trained volunteers, working to make sure
+            Scouting is safe, inclusive and accessible. Some lead the Pack week
+            in and week out. Others visit occasionally to help run a session or
+            drop in to share their skills.
+          </p>
+        </div>
       </div>
     </div>
   );
