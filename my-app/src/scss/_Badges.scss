@@ -1,61 +1,368 @@
-.badges-heading{
-    text-align: center;
-    color: #9b6bdf;
-    -webkit-text-stroke: 1px black; /* width and color */
+.Badges-main {
+  display: flex;
+  flex-direction: column;
 }
 
-.first-badges{
-border: 2px solid black;
-width: 100vw;
-height: 20rem;
-display: flex;
-flex-direction: row;
-gap: 2rem;
-
-justify-content: space-evenly;
+.badges-heading {
+  text-align: center;
+  color: #9b6bdf;
+  -webkit-text-stroke: 1px black; /* width and color */
 }
 
-.badge1{
-    
+#badgep {
+  color: #9b6bdf;
+  -webkit-text-stroke: 0.4px black; /* width and color */
+  font-size: large;
+  text-align: center;
+}
+
+.first-badges {
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.badge1 {
+  border-radius: 15%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: #9b6bdf 2px solid;
-    
 }
 
-
-
-
-.badge2{
-    border: 2px solid black;
-    width: 20%;
-    height: 100%;
+.badge1 img {
+  padding-top: 10px;
 }
 
-.badge1-img-2{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Badges/badge2.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.badge2 {
+  border-radius: 15%;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
 }
 
-.badge3{
-    border: 2px solid black;
-   width: 20%;
-   height: 100%;
-    
+.badge2 img {
+  padding-top: 10px;
 }
 
-.badge1-img-3{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/Badges/badge3.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.badge3 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge3 img {
+  padding-top: 10px;
+}
+
+.second-badges {
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.badge4 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge4 img {
+  padding-top: 10px;
+}
+
+.badge5 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge5 img {
+  padding-top: 10px;
+}
+
+.badge6 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge6 img {
+  padding-top: 10px;
+}
+.third-badges {
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.badge7 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge7 img {
+  padding-top: 10px;
+}
+
+.badge8 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge8 img {
+  padding-top: 10px;
+}
+
+.badge9 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+.badge9 img {
+  padding-top: 10px;
+}
+.fourth-badges {
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.badge10 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge10 img {
+  padding-top: 10px;
+}
+
+.badge11 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+.badge11 img {
+  padding-top: 10px;
+}
+
+.badge12 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+.badge12 img {
+  padding-top: 10px;
+}
+.fith-badges {
+  width: 100vw;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.badge13 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge13 img {
+  padding-top: 10px;
+}
+
+.badge14 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge14 img {
+  padding-top: 10px;
+}
+
+.badge15 {
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #9b6bdf 2px solid;
+}
+
+.badge15 img {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 633px) {
+  .first-badges {
+    width: 100vw;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .second-badges {
+    width: 100vw;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .third-badges {
+    width: 100vw;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .fourth-badges {
+    width: 100vw;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .fith-badges {
+    width: 100vw;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .badge1 {
+    width: 60%;
+  }
+
+  .badge2 {
+    width: 60%;
+  }
+
+  .badge3 {
+    width: 60%;
+  }
+
+  .badge4 {
+    width: 60%;
+  }
+
+  .badge5 {
+    width: 60%;
+  }
+
+  .badge6 {
+    width: 60%;
+  }
+
+  .badge7 {
+    width: 60%;
+  }
+
+  .badge8 {
+    width: 60%;
+  }
+
+  .badge9 {
+    width: 60%;
+  }
+
+  .badge10 {
+    width: 60%;
+  }
+
+  .badge11 {
+    width: 60%;
+  }
+
+  .badge12 {
+    width: 60%;
+  }
+
+  .badge13 {
+    width: 60%;
+  }
+
+  .badge14 {
+    width: 60%;
+  }
+
+  .badge15 {
+    width: 60%;
+  }
 }
