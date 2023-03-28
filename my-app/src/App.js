@@ -4,13 +4,16 @@ import Footer from "./components/Footer";
 import Home from './pages/Home';
 import Homeevents from "./pages/Homeevents";
 import Badges from "./pages/Badges";
+import Login from "./pages/Login";
+import Games from "./pages/Games";
+
 function App() {
   return (
     <div className="App">
 
 
       <Header/>
-     <Badges/>
+     <Games/>
      <Footer/>
 
 

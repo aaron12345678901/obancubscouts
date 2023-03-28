@@ -1,0 +1,66 @@
+.Login-main{
+   width: 100%;
+   height: 100vh;
+   background-image: url(../images/login/loginbackground.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   padding-top: -1px;
+
+    
+}
+
+
+
+
+.Login-head{
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    width: 60vw;
+}
+
+
+.register{
+    padding-top: 4rem;
+    padding-left: 5rem;
+    display: flex;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 30vw;
+   text-align: center;
+  
+  
+
+
+}
+
+
+.register_text{
+   padding: 2px;
+}
+
+
+.register_text input{
+    border-radius: 10%;
+    overflow: hidden;
+    width: 15rem;
+}
+
+
+.register_btn input{
+    border-radius: 10%;
+}
+
+
+.login{
+   color: #B080F2;
+   padding-left: 60%;
+}
+
+.login-form{
+    padding-left: 60%;
+    text-align: center;
+}
