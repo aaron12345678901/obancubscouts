@@ -1,6 +1,6 @@
 import logo from "../images/fleur-logo.png";
 
-function Header() {
+function Childrensheader() {
   return (
     <div className="Header">
       <div className="header-first-line">
@@ -23,11 +23,11 @@ function Header() {
         </div>
 
         <div className="reg-login">
-          {" "}
-          <p>Log in/Register</p>
+          <p id="photo">photo gallery</p>
+
+          <p>log out</p>
         </div>
       </div>
-
 
       <div className="header-second-line">
         <div className="header-main-img"></div>
@@ -36,4 +36,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Childrensheader;
