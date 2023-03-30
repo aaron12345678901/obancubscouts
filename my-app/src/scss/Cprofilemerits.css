@@ -1,0 +1,28 @@
+.merit-counter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: black 2px solid;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cprofile-badges-container {
+  width: 80%;
+  border: black 2px solid;
+  display: flex;
+  flex-direction: column;
+  border: rgb(15, 15, 252) 2px solid;
+  padding: 10%;
+}
+
+.cprofile-badge-order {
+  display: flex;
+  flex-direction: row;
+  border: red 2px solid;
+}
+
+.cprofile-badge {
+  background-color: white;
+  border: green 2px solid;
+}/*# sourceMappingURL=Cprofilemerits.css.map */

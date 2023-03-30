@@ -8,13 +8,16 @@ import Badges from "./pages/Badges";
 import Login from "./pages/Login";
 import Games from "./pages/Games";
 import Childrensprofile from "./pages/Childrenspages/Childrensprofile";
+import Cprofilemerits from "./pages/Childrenspages/Cprofilemerits";
+
+
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <Childrensprofile />
+      <Cprofilemerits />
 
       <Footer />
     </div>
