@@ -1,12 +1,12 @@
 import cprofile from "../../images/profilepics/cprofilepic.png";
 import arrowleft from "../../images/arrow-left.png";
 import arrowright from "../../images/arrow-right.png";
-
-
-
-
-
-
+import badge3 from "../../images/Badges/badge3.png";
+import badge2 from "../../images/Badges/badge2.png";
+import badge5 from "../../images/Badges/badge5.png";
+import badge6 from "../../images/Badges/badge6.png";
+import badge8 from "../../images/Badges/badge8.png";
+import badge9 from "../../images/Badges/badge9.png";
 
 function Cprofilemerits() {
   return (
@@ -38,24 +38,47 @@ function Cprofilemerits() {
           </div>
         </div>
 
-
         <div className="cprofile-badges-container">
           <div className="cprofile-badge-order">
-
-          <div className="cprofile-badge"><p>first1</p></div>
-          <div className="cprofile-badge">first2</div>
+            <div className="cprofile-badge">
+              {" "}
+              <img src={badge3} alt="" />
+              <p id="badgep">bush</p>
+            </div>
+            <div className="cprofile-badge">
+              {" "}
+              <img src={badge2} alt="" />
+              <p id="badgep">Air Researcher</p>
+            </div>
           </div>
           <div className="cprofile-badge-order">
-
-          <div className="cprofile-badge">second2</div>
-          <div className="cprofile-badge">second2</div>
+            <div className="cprofile-badge">
+              {" "}
+              <img src={badge5} alt="" />
+              <p id="badgep">community aid </p>
+            </div>
+            <div className="cprofile-badge">
+              {" "}
+              <img src={badge6} alt="" />
+              <p id="badgep">instructor</p>
+            </div>
           </div>
           <div className="cprofile-badge-order">
-
-          <div className="cprofile-badge"><p>third1</p></div>
-          <div className="cprofile-badge"><p>third2</p></div>
+            <div className="cprofile-badge">
+              <p>
+                {" "}
+                <img src={badge8} alt="" />
+                <p id="badgep">craft</p>
+              </p>
+            </div>
+            <div className="cprofile-badge">
+              <p>
+                {" "}
+                <img src={badge9} alt="" />
+                <p id="badgep"> Seat Rowing</p>
+              </p>
+            </div>
           </div>
-
         </div>
       </div>
     </div>

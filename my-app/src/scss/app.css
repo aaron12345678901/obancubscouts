@@ -763,10 +763,7 @@
 }
 
 .childrens-profile {
-  height: 100vh;
-  width: 100vw;
-  background-color: #B080F2;
-  margin-top: -1rem;
+  background-color: #b080f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -774,12 +771,11 @@
 
 .profile-container {
   width: 80%;
-  height: auto;
-  background-color: #F0AF49;
-  display: flex;
+  background-color: #f0af49;
   flex-direction: column;
   border: black 2px solid;
   border-radius: 10%;
+  margin: 5rem;
 }
 
 .cprofile-first-line {
@@ -824,7 +820,7 @@
 }
 
 .cprofile-button button {
-  background-color: #62F072;
+  background-color: #62f072;
   border-radius: 10%;
 }
 
@@ -839,27 +835,30 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  border: black 2px solid;
   flex-direction: column;
   text-align: center;
 }
 
 .cprofile-badges-container {
   width: 80%;
-  border: black 2px solid;
   display: flex;
   flex-direction: column;
-  border: rgb(15, 15, 252) 2px solid;
-  padding: 10%;
+  padding-left: 10%;
 }
 
 .cprofile-badge-order {
   display: flex;
   flex-direction: row;
-  border: red 2px solid;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
 }
 
 .cprofile-badge {
   background-color: white;
-  border: green 2px solid;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=app.css.map */
