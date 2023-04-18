@@ -954,11 +954,11 @@
 }
 
 .Aduilt-nav {
-  width: 20%;
+  width: 15%;
 }
 
 .Aduilt-content {
-  width: 80%;
+  width: 85%;
 }
 
 .Aduiltnav-main {
@@ -967,6 +967,7 @@
   background-color: #B080F2;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .profile-pic {
@@ -1012,4 +1013,130 @@
 
 #Alogout:hover {
   font-size: 2rem;
+}
+
+.Aduiltprofile-main {
+  background-color: #7C55B2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Aduiltprofile-main h1 {
+  color: white;
+  font-family: Ibarra Real Nova;
+  font-weight: 200;
+}
+
+.Aduiltprofile-main p {
+  color: white;
+  font-family: Ibarra Real Nova;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.A-profile-align {
+  width: 90%;
+}
+
+.profile-head-elements {
+  background-color: #B080F2;
+  color: white;
+  font-family: Ibarra Real Nova;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.profile-head-elements h2 {
+  padding-left: 30px;
+}
+
+.A-profile-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #B080F2;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border: solid black 1px;
+}
+
+.A-inner-profile-card {
+  width: 90%;
+}
+
+.profilepic-and-names {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Aprofilepic {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Ibarra Real Nova;
+  font-size: 0.2rem;
+}
+
+.Aprofilepic img {
+  width: 151px;
+  height: 145px;
+}
+
+.A-names {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.A-names form {
+  display: flex;
+  flex-direction: column;
+}
+
+.A-names input {
+  background-color: #7C55B2;
+  height: 54px;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  border: black solid 1px;
+}
+
+.A-aboutme {
+  width: 100%;
+}
+
+.A-aboutme input {
+  background-color: #7C55B2;
+  width: 100%;
+  min-height: 143px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.A-passed-course ul {
+  list-style-type: none;
+  color: white;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+}
+
+.A-passed-course li {
+  text-decoration: underline;
+}
+
+#no-underline {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=app.css.map */
