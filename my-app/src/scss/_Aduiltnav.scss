@@ -1,0 +1,59 @@
+.Aduiltnav-main{
+    display: flex;
+    flex-direction: column;
+    background-color: #B080F2;
+   justify-content: center;
+   align-items: center;
+}
+
+.profile-pic{
+    padding-top: 8px;
+}
+
+.name-logout ul{
+    list-style-type: none;
+    color: white;
+    font-family: Josefin Sans;
+    font-size: 1.5rem;
+    
+}
+
+.name-logout li{
+    padding: 2px;
+    
+}
+
+.nav-border{
+    width: 80%;
+    border: black solid 2px;
+}
+
+
+.Aduilt-nav-links ul{
+    list-style-type: none;
+    color: white;
+    font-family: Josefin Sans;
+    font-size: 1rem;
+}
+
+
+.Aduilt-nav-links li{
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+
+.Aduilt-nav-links li:hover{
+    font-size: 1.5rem;
+}
+
+#Alogout{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+
+#Alogout:hover{
+    font-size: 2rem;
+}
+

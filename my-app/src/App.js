@@ -11,6 +11,7 @@ import Childrensprofile from "./pages/Childrenspages/Childrensprofile";
 import Cprofilemerits from "./pages/Childrenspages/Cprofilemerits";
 import Aduiltandchild from "./pages/galleries/Aduiltandchild";
 import Aduiltlanding from "./pages/Aduiltpages/Aduiltlanding"
+import Aduiltnav from "./components/Aduiltnav";
 
 
 function App() {
