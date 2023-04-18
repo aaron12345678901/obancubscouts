@@ -945,4 +945,20 @@
   margin-top: -10px;
   padding-left: 15px;
   font-family: Ibarra Real Nova;
+}
+
+.Aduiltlanding-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Aduilt-nav {
+  border: black solid 2px;
+  width: 20%;
+}
+
+.Aduilt-content {
+  border: black solid 2px;
+  width: 80%;
 }/*# sourceMappingURL=app.css.map */
