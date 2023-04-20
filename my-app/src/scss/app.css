@@ -1020,7 +1020,7 @@
 }
 
 .Aduiltprofile-main {
-  background-color: #7C55B2;
+  background-color: #7c55b2;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1046,7 +1046,7 @@
 }
 
 .profile-head-elements {
-  background-color: #B080F2;
+  background-color: #b080f2;
   color: white;
   font-family: Ibarra Real Nova;
   font-size: 2rem;
@@ -1060,7 +1060,7 @@
 .A-profile-card {
   display: flex;
   flex-direction: column;
-  background-color: #B080F2;
+  background-color: #b080f2;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -1108,7 +1108,7 @@
 }
 
 .A-names input {
-  background-color: #7C55B2;
+  background-color: #7c55b2;
   height: 54px;
   width: 100%;
   color: white;
@@ -1121,7 +1121,7 @@
 }
 
 .A-aboutme input {
-  background-color: #7C55B2;
+  background-color: #7c55b2;
   width: 100%;
   min-height: 143px;
   color: white;
@@ -1147,7 +1147,7 @@
   border-radius: 10%;
   font-family: Ibarra Real Nova;
   font-size: 2rem;
-  background-color: #8BB255;
+  background-color: #8bb255;
   box-shadow: 3px 5px #888888;
 }
 
@@ -1176,4 +1176,29 @@
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.aduilt-childrens-profile {
+  background-color: #7c55b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Aduilt-child-merits {
+  width: 100%;
+  background-color: #7c55b2;
+}
+
+.aduilts-child-p-heading {
+  color: white;
+  font-family: Ibarra Real Nova;
+  width: 100%;
+  margin-bottom: -8%;
+}
+
+.aduilts-child-p-heading h1 {
+  padding-left: 15%;
+  font-weight: 100;
 }/*# sourceMappingURL=app.css.map */

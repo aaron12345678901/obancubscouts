@@ -1,5 +1,5 @@
 import placeholder from "../../images/profilepics/placeholderpic.png";
-import tick from "../../images/tick.png"
+import tick from "../../images/tick.png";
 
 function Aduiltprofile() {
   return (
@@ -14,65 +14,60 @@ function Aduiltprofile() {
 
         <div className="A-profile-card">
           <div className="A-inner-profile-card">
+            <div className="profilepic-and-names">
+              <div className="Aprofilepic">
+                <img src={placeholder} alt="" />
+                <p>click to change profile picture </p>
+              </div>
 
-
-          <div className="profilepic-and-names">
-            <div className="Aprofilepic">
-              <img src={placeholder} alt="" />
-              <p>click to change profile picture </p>
+              <div className="A-names">
+                <form action="">
+                  <input
+                    type="text"
+                    id="Afname"
+                    name="Afname"
+                    value="first name:"
+                  ></input>{" "}
+                  <br />
+                  <input
+                    type="text"
+                    id="Asname"
+                    name="Asname"
+                    value="surname:"
+                  ></input>
+                </form>
+              </div>
             </div>
 
-            <div className="A-names">
+            <div className="A-aboutme">
               <form action="">
                 <input
-                  type="text"
-                  id="Afname"
-                  name="Afname"
-                  value="first name:"
-                ></input>{" "}
-                <br />
-                <input
-                  type="text"
-                  id="Asname"
-                  name="Asname"
-                  value="surname:"
-                ></input>
-              </form>
-            </div>
-          </div>
-          
-          <div className="A-aboutme">
-            <form action="">
-            <input
                   type="text"
                   id="A-about"
                   name="A-about"
                   value="about me:"
                 ></input>
-            </form>
-          </div>
+              </form>
+            </div>
 
+            <div className="aduilt-pro-bottom-cont">
+              <div className="A-passed-course">
+                <ul>
+                  <li>
+                    disclosure: <img src={tick} alt="" />{" "}
+                  </li>
+                  <li id="no-underline">training attended</li>
+                  <li>first aid level 3</li>
+                  <li>group leader </li>
+                  <li>water safety</li>
+                  <li>intro to climbing </li>
+                </ul>
+              </div>
 
-          <div className="aduilt-pro-bottom-cont">
-
-          <div className="A-passed-course">
-            <ul>
-              <li>disclosure:   <img src={tick} alt="" />  </li>
-              <li id="no-underline">training attended</li>
-              <li>first aid level 3</li>
-              <li>group leader </li>
-              <li>water safety</li>
-              <li>intro to climbing </li>
-            </ul>
-          </div>
-
-          <div className="aduilt-edit-btn-container">
-            <button> click submit edits</button>
-          </div>
-
-</div>
-
-
+              <div className="aduilt-edit-btn-container">
+                <button> click submit edits</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
