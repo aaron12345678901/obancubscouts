@@ -52,6 +52,9 @@ function Aduiltprofile() {
             </form>
           </div>
 
+
+          <div className="aduilt-pro-bottom-cont">
+
           <div className="A-passed-course">
             <ul>
               <li>disclosure:   <img src={tick} alt="" />  </li>
@@ -62,6 +65,13 @@ function Aduiltprofile() {
               <li>intro to climbing </li>
             </ul>
           </div>
+
+          <div className="aduilt-edit-btn-container">
+            <button> click submit edits</button>
+          </div>
+
+</div>
+
 
           </div>
         </div>

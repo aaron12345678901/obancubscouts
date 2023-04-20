@@ -123,6 +123,41 @@ border: black solid 1px;
     
 }
 
+.aduilt-pro-bottom-cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.aduilt-edit-btn-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aduilt-edit-btn-container button{
+    width: 20rem;
+    height: 3rem;
+    border: solid black 1px;
+    border-radius: 10%;
+    font-family: Ibarra Real Nova;
+    font-size: 2rem;
+    background-color: #8BB255;
+    box-shadow: 3px 5px #888888;
+
+}
+
+.aduilt-edit-btn-container button:hover{
+    border: solid orangered 1px;
+    box-shadow: 5px 10px orangered;
+    color: orangered ;
+}
+
+.A-passed-course{
+   
+    width: 50%;
+}
+
 .A-passed-course ul{
     list-style-type: none;
     color: white;
