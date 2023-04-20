@@ -1,0 +1,25 @@
+.reg-disc-text{
+    color: white;
+    padding: 10px;
+    font-family: Josefin Sans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-diclosure--link-btn button{
+    background-color: #7c55b2;
+    width: 100%;
+   margin: 30px;
+   border-radius: 12px;
+   height: 40px;
+   border: black solid 2px;
+   font-family: Josefin Sans;
+   font-size: 1rem;
+}
+
+.reg-diclosure--link-btn button:hover{
+    border: orangered solid 2px;
+    color:orangered  ;
+}
