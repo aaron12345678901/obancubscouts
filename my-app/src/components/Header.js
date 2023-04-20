@@ -12,7 +12,7 @@ function Header() {
             <p>oban cub scouts</p>
           </div>
         </div>
-
+           <div className="header-border"></div>
         <div className="first-header-links">
           <ul>
             <li>Home</li>
