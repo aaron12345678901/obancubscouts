@@ -77,6 +77,11 @@
   background-size: 100% 100%;
 }
 
+.Home {
+  height: auto;
+  width: auto;
+}
+
 .home-head {
   background-color: #CFB6F2;
   padding-top: 1rem;
