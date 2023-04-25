@@ -1,7 +1,14 @@
 import cprofile from "../../images/profilepics/cprofilepic.png";
+import Aduiltnav from "../../components/Aduiltnav";
 
 function Aduiltschildp() {
   return (
+
+
+    <div className="aduilts-childp-nav">
+     <div className="Aduilt-nav">
+    <Aduiltnav />
+  </div>
     <div className="Aduilts-child-main">
       <div className="aduilt-childrens-profile">
         <div className="aduilts-child-p-heading">
@@ -37,6 +44,7 @@ function Aduiltschildp() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

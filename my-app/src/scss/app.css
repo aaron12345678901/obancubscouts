@@ -1071,6 +1071,11 @@
   font-size: 2rem;
 }
 
+.Aduilt-nav-main {
+  display: flex;
+  flex-direction: row;
+}
+
 .Aduiltprofile-main {
   background-color: #7c55b2;
   width: 100%;
@@ -1230,6 +1235,11 @@
   padding-bottom: 10px;
 }
 
+.aduilts-childp-nav {
+  display: flex;
+  flex-direction: row;
+}
+
 .aduilt-childrens-profile {
   background-color: #7c55b2;
   display: flex;
@@ -1253,6 +1263,11 @@
 .aduilts-child-p-heading h1 {
   padding-left: 15%;
   font-weight: 100;
+}
+
+.aduilt-events-nav {
+  display: flex;
+  flex-direction: row;
 }
 
 .aduilt-profile-events-container {
@@ -1297,6 +1312,11 @@
 
 .aduilt-event-arrow {
   padding: 10px;
+}
+
+.aduilt-reg-help-nav {
+  display: flex;
+  flex-direction: row;
 }
 
 .reg-helper {
@@ -1360,6 +1380,16 @@
 .reg-diclosure--link-btn button:hover {
   border: orangered solid 2px;
   color: orangered;
+}
+
+.Aduiltdiscmain {
+  display: flex;
+  flex-direction: row;
+}
+
+.aduilt-reg-training-nav {
+  display: flex;
+  flex-direction: row;
 }
 
 .A-profile-card-training {

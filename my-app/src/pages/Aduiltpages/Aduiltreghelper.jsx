@@ -1,7 +1,14 @@
+import Aduiltnav from "../../components/Aduiltnav";
 
 
 function Aduiltreghelper() {
   return (
+
+    <div className="aduilt-reg-help-nav">
+    <div className="Aduilt-nav">
+    <Aduiltnav />
+  </div>
+
     <div className="Aduiltprofile-main">
       <div className="A-profile-align">
         <h1>Register as a helper  </h1>
@@ -30,6 +37,7 @@ function Aduiltreghelper() {
 
         </div>
       </div>
+    </div>
     </div>
   );
 }

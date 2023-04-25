@@ -6,6 +6,11 @@ import training2 from "../../images/trainingimages/training2.png";
 import training3 from "../../images/trainingimages/training3.png";
 import training4 from "../../images/trainingimages/training4.png";
 
+
+
+
+import Aduiltnav from "../../components/Aduiltnav";
+
 function Aduiltregtraining() {
   const date = useRef();
 
@@ -31,6 +36,13 @@ function Aduiltregtraining() {
   });
 
   return (
+
+
+<div className="aduilt-reg-training-nav">
+<div className="Aduilt-nav">
+        <Aduiltnav />
+      </div>
+
     <div className="Aduiltprofile-main">
       <div className="A-profile-align">
         <h1>Register for training </h1>
@@ -124,6 +136,7 @@ function Aduiltregtraining() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

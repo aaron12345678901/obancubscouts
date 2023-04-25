@@ -1,11 +1,6 @@
 import profilepic from "../images/profilepics/aduilt-profile-pic.png";
 import { Outlet, Link } from "react-router-dom";
 
-
-
-
-
-
 function Aduiltnav() {
   return (
     <div className="Aduiltnav-main">
@@ -22,24 +17,40 @@ function Aduiltnav() {
 
       <div className="nav-border"></div>
 
-       <div className="Aduilt-nav-links">
-       <ul>
+      <div className="Aduilt-nav-links">
+        <ul>
+          <li>
+            {" "}
+            <Link to="/Aduiltprofile">my profile </Link>
+          </li>
 
-       
-          <li>my profile </li>
-     
+          <li>
+            {" "}
+            <Link to="/Aduiltschildp"> my child</Link>
+          </li>
 
+          <li>
+            {" "}
+            <Link to="/Aduiltseventsreg">my events </Link>
+          </li>
 
+          <li>
+            <Link to="/Aduiltreghelper">register as helper</Link>
+          </li>
 
-          <li>my child </li>
-          <li>my events </li>
-          <li>register as helper</li>
-          <li>register for disclosure </li>
-          <li>register for training  </li>
+          <li>
+            {" "}
+            <Link to="/Aduiltregdisclosure">
+              {" "}
+              register for disclosure{" "}
+            </Link>{" "}
+          </li>
+
+          <li>
+            <Link to="/Aduiltregtraining">register for training </Link>{" "}
+          </li>
         </ul>
-
-       </div>
-
+      </div>
     </div>
   );
 }

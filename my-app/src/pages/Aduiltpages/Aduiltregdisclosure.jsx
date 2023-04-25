@@ -1,8 +1,31 @@
-function Aduiltreghelper() {
+import Aduiltnav from "../../components/Aduiltnav";
+
+
+
+function Aduiltregdisclosure() {
   return (
+
+
+    <div className="Aduiltdiscmain">
+       <div className="Aduilt-nav">
+        <Aduiltnav />
+      </div>
+
     <div className="Aduiltprofile-main">
+           
+           
+     
+
+
       <div className="A-profile-align">
         <h1>Register for a disclosure</h1>
+
+
+
+          
+       
+  
+
 
         <div className="A-profile-card">
           <div className="reg-disc-text">
@@ -31,9 +54,11 @@ function Aduiltreghelper() {
             <button>mygov.scot</button>
           </div>
         </div>
+
+        </div>
       </div>
-    </div>
+      </div>
   );
 }
 
-export default Aduiltreghelper;
+export default Aduiltregdisclosure;

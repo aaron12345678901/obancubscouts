@@ -1,13 +1,21 @@
 import placeholder from "../../images/profilepics/placeholderpic.png";
 import tick from "../../images/tick.png";
+import Aduiltnav from "../../components/Aduiltnav";
 
 function Aduiltprofile() {
   return (
+
+   <div className="Aduilt-nav-main">
+      <div className="Aduilt-nav">
+        <Aduiltnav />
+      </div>
+
+
     <div className="Aduiltprofile-main">
       <div className="A-profile-align">
         <h1>my profile </h1>
         <p>set your name bio and other public information </p>
-
+       
         <div className="profile-head-elements">
           <h2>Profile</h2>
         </div>
@@ -72,6 +80,8 @@ function Aduiltprofile() {
         </div>
       </div>
     </div>
+    </div>
+
   );
 }
 
