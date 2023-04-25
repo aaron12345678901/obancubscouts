@@ -1,3 +1,9 @@
+import Log from "../components/Log";
+import Reg from "../components/Reg";
+
+
+
+
 function Login() {
   return (
     <div className="Login-main">
@@ -12,72 +18,16 @@ function Login() {
             experiences.
           </p>
         </div>
+            <div className="form-containers">
 
-        <div className="register">
-          <form>
-            <div className="register_text">
-              <div>
-                <input type="text" name="fname" value="name:" />
-              </div>
+              <div className="reg-container"> <Reg></Reg></div>
+
+              <div className="log-container"><Log></Log></div>
+              
+               
+
             </div>
-
-            <div className="register_text">
-              <div>
-                <input type="text" name="surname" value="surname:" />
-              </div>
-            </div>
-
-            <div className="register_text">
-              <div>
-                <input type="email" name="email" value="email:" />
-              </div>
-            </div>
-
-            <div className="register_text">
-              <div>
-                <input type="password" name="password" value="password:" />
-              </div>
-            </div>
-
-            <div className="register_btn">
-              <input
-                type="submit"
-                name="register"
-                className="register-btn"
-                value="Please register"
-              />
-            </div>
-          </form>
-        </div>
-
-        <div className="login">
-          <h2>all ready a member!log in</h2>
-        </div>
-
-        <div className="login-form">
-          <form>
-            <div className="register_text">
-              <div>
-                <input type="email" name="email" value="email:" />
-              </div>
-            </div>
-
-            <div className="register_text">
-              <div>
-                <input type="password" name="password" value="password:" />
-              </div>
-            </div>
-
-            <div className="register_btn">
-              <input
-                type="submit"
-                name="register"
-                className="register-btn"
-                value="login"
-              />
-            </div>
-          </form>
-        </div>
+          
       </div>
     </div>
   );

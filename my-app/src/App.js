@@ -14,11 +14,20 @@ import Aduiltandchild from "./pages/galleries/Aduiltandchild";
 import Aduiltlanding from "./pages/Aduiltpages/Aduiltlanding"
 import Aduiltnav from "./components/Aduiltnav";
 
+
+
+
+
+
+
+
+
 function App() {
 
   return (
-    <BrowserRouter>
+   <BrowserRouter>
       <div className="App">
+ 
         <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,10 +37,19 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/childrensprofile" element={<Childrensprofile />} />
           <Route path="/cprofilemerits" element={<Cprofilemerits />} />
-          <Route path="/aduiltandchild" element={<Aduiltandchild />} />
           <Route path="/aduiltlanding" element={<Aduiltlanding />} />
+       
+         
+
+
         </Routes>
+
+
+
+
+
         <Footer />
+
       </div>
     </BrowserRouter>
   );

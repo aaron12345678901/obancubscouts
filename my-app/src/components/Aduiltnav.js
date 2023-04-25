@@ -1,4 +1,10 @@
 import profilepic from "../images/profilepics/aduilt-profile-pic.png";
+import { Outlet, Link } from "react-router-dom";
+
+
+
+
+
 
 function Aduiltnav() {
   return (
@@ -18,7 +24,13 @@ function Aduiltnav() {
 
        <div className="Aduilt-nav-links">
        <ul>
+
+       
           <li>my profile </li>
+     
+
+
+
           <li>my child </li>
           <li>my events </li>
           <li>register as helper</li>
