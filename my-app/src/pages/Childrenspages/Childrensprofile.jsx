@@ -1,6 +1,31 @@
 import cprofile from "../../images/profilepics/cprofilepic.png";
+import {  Link } from "react-router-dom";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 
 function Childrensprofile() {
+  // two states one to store user data and one to see if data is still loading
+  const [userData, setUserData] = useState([]);
+  const [loading, setloading] = useState(false);
+
+  // getting id from local storage and converting to a javascript object to be used
+  let id = JSON.parse(window.localStorage.getItem("id"));
+
+  // getting users data from server using the id that was retrieved
+  useEffect(() => {
+    axios
+      .post(`http://localhost/php-react/oban-scouts-php/get.php?id=${id}`)
+      .then((response) => setUserData(response.data))
+      .catch((error) => console.error(error));
+    setloading(true);
+    
+
+
+  }, []);
+
+
+
+
   return (
     <div className="childrens-profile">
       <div className="profile-container">
@@ -10,9 +35,18 @@ function Childrensprofile() {
           </div>
 
           <div className="cfirst-details">
-            <p>Name: child 1</p>
-            <p>Rank: scout leader</p>
-            <p>Term of service: 2y 10 m</p>
+
+          {loading
+              ? userData.map((data) => (
+                  <>
+                    <p>name:{data.first_name}</p>
+                    <p>rank:{data.rank}</p>
+                    <p>term of service:{data.term_of_service}</p>
+                  </>
+                ))
+              : null}
+
+
           </div>
         </div>
 
@@ -29,7 +63,9 @@ function Childrensprofile() {
         </div>
 
         <div className="cprofile-button">
-          <button>merit badges</button>
+
+        <Link to="/Cprofilemerits">
+          <button>merit badges</button> </Link>
         </div>
       </div>
     </div>

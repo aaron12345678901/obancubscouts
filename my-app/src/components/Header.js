@@ -19,19 +19,19 @@ function Header() {
         <div className="first-header-links">
           <ul>
             <Link to="/">
-              <li>Home</li>
+              <li><button>Home</button></li>
             </Link>
 
             <Link to="Homeevents">
-              <li>Events</li>
+              <li><button>Events</button></li>
             </Link>
 
             <Link to="Games">
-              <li>Games</li>
+              <li><button>Games</button></li>
             </Link>
 
             <Link to="Badges">
-              <li>Badges</li>
+              <li><button>Badges</button></li>
             </Link>
           </ul>
         </div>
@@ -39,7 +39,7 @@ function Header() {
         <div className="reg-login">
 
         <Link to="Login">
-          <p>Log in/Register</p>
+          <p><button>Log in/Register</button></p>
           </Link>
         </div>
       </div>
