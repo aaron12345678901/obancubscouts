@@ -52,14 +52,14 @@ function Childrensprofile() {
 
         <div className="cprofile-merits">
           <h2>outstanding merits:</h2>
-          <p>
-            By 1915 Bowen had executed a group of experimental studies that
-            proved to be critically important to petrology and formed the basis
-            of his critical review The Later Stages of the Evolution of the
-            Igneous Rocks (1915), a paper of such outstanding merit that it
-            established Bowen's position at the age of 28 as an international
-            figure in petrology.
-          </p>
+          {loading
+              ? userData.map((data) => (
+                  <>
+                    <p>{data.outstanding_merit}</p>
+                   
+                  </>
+                ))
+              : null}
         </div>
 
         <div className="cprofile-button">
