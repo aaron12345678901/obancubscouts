@@ -49,6 +49,10 @@ function Aduiltnav() {
           <li>
             <Link to="/Aduiltregtraining">register for training </Link>{" "}
           </li>
+
+          <li>
+            <Link to="/Aduiltgallery">gallery</Link>
+          </li>
         </ul>
       </div>
     </div>

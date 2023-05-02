@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2023 at 12:11 PM
+-- Generation Time: May 02, 2023 at 01:41 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -32,16 +32,15 @@ CREATE TABLE `childs_details` (
   `rank` varchar(500) NOT NULL,
   `term_of_service` varchar(500) NOT NULL,
   `outstanding_merit` text NOT NULL,
-  `profile_pic` int(1) NOT NULL,
-  `badges_acheived` int(1) NOT NULL
+  `profile_pic` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `childs_details`
 --
 
-INSERT INTO `childs_details` (`id`, `rank`, `term_of_service`, `outstanding_merit`, `profile_pic`, `badges_acheived`) VALUES
-(3, 'scout leader', '2y 6m', 'By 1915 Bowen had executed a group of experimental studies that proved to be critically important to petrology and formed the basis of his critical review The Later Stages of the Evolution of the Igneous Rocks (1915), a paper of such outstanding merit that it established Bowen\'s position at the age of 28 as an international figure in petrology.\r\n\r\n', 1, 1);
+INSERT INTO `childs_details` (`id`, `rank`, `term_of_service`, `outstanding_merit`, `profile_pic`) VALUES
+(3, 'scout leader', '2y 6m', 'By 1915 Bowen had executed a group of experimental studies that proved to be critically important to petrology and formed the basis of his critical review The Later Stages of the Evolution of the Igneous Rocks (1915), a paper of such outstanding merit that it established Bowen\'s position at the age of 28 as an international figure in petrology.\r\n\r\n', 1);
 
 --
 -- Indexes for dumped tables
