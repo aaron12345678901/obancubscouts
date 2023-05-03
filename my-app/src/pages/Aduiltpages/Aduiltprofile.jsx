@@ -3,6 +3,7 @@ import Aduiltnav from "../../components/Aduiltnav";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import Aduilttraining from "../../components/Aduilttraining";
 
 function Aduiltprofile() {
   // two states one to store user data and one to see if data is still loading
@@ -21,6 +22,9 @@ function Aduiltprofile() {
       .catch((error) => console.error(error));
     setloading(true);
   }, []);
+
+
+
 
   return (
     <div className="Aduilt-nav-main">
@@ -93,14 +97,14 @@ function Aduiltprofile() {
 
                     </li>
                     <li id="no-underline">training attended</li>
-                    <li>first aid level 3</li>
-                    <li>group leader </li>
-                    <li>water safety</li>
-                    <li>intro to climbing </li>
+
+                   
+                    <li> <Aduilttraining/> </li>
+                 
                   </ul>
 
 {/* /////////////test area //////////////// */}
-
+              
 
 
 {/* ///////////////////////////////// */}

@@ -25,25 +25,26 @@ if (!$conn) {
 
 
 // Retrieve data from the database based on the user's ID
-$sql = "SELECT user.first_name,user.last_name,aduilt_details.about_me,aduilt_details.disclosure
+$sql = "SELECT training.name
 FROM user
 INNER JOIN aduilt_details
 ON user.fk_aduilt_details = aduilt_details.id
-
+INNER JOIN training
+ON training.fk_aduilt = aduilt_details.id
 
 WHERE user.id = '$user_id'";
-$result = $conn->query($sql);
+$result2 = $conn->query($sql);
 
 
 
 // Check if there are any results
-if ($result->num_rows > 0) {
+if ($result2->num_rows > 0) {
     // Output the data as a JSON string
-    $data = array();
-    while ($row = $result->fetch_assoc()) {
-        $data[] = $row;
+    $data2 = array();
+    while ($row = $result2->fetch_assoc()) {
+        $data2[] = $row;
     }
-    echo json_encode($data);
+    echo json_encode($data2);
 } else {
     echo json_encode(array());
 }
