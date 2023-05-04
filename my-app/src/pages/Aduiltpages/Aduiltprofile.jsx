@@ -10,7 +10,6 @@ function Aduiltprofile() {
   const [userData, setUserData] = useState([]);
   const [loading, setloading] = useState(false);
 
-
   // getting id from local storage and converting to a javascript object to be used
   let id = JSON.parse(window.localStorage.getItem("id"));
 
@@ -22,9 +21,6 @@ function Aduiltprofile() {
       .catch((error) => console.error(error));
     setloading(true);
   }, []);
-
-
-
 
   return (
     <div className="Aduilt-nav-main">
@@ -82,8 +78,6 @@ function Aduiltprofile() {
 
               <div className="aduilt-pro-bottom-cont">
                 <div className="A-passed-course">
-
-
                   <ul>
                     <li>
                       {loading
@@ -91,24 +85,18 @@ function Aduiltprofile() {
                             <>disclosure: {data.disclosure}</>
                           ))
                         : null}
-
-
-
-
                     </li>
                     <li id="no-underline">training attended</li>
 
-                   
-                    <li> <Aduilttraining/> </li>
-                 
+                    <li>
+                      {" "}
+                      <Aduilttraining />{" "}
+                    </li>
                   </ul>
 
-{/* /////////////test area //////////////// */}
-              
+                  {/* /////////////test area //////////////// */}
 
-
-{/* ///////////////////////////////// */}
-
+                  {/* ///////////////////////////////// */}
                 </div>
               </div>
             </div>
