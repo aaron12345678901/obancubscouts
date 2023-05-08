@@ -1,8 +1,10 @@
-import placeholder from "../../images/profilepics/placeholderpic.png";
-import Aduiltnav from "../../components/Aduiltnav";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import React, { useState, useEffect } from "react";
+import Aduiltnav from "../../components/Aduiltnav";
+import ProfilePictureUploader from "../../components/ProfilePictureUploader";
+import ProfilePicture from "../../components/ProfilePicture";
+import placeholder from "../../images/profilepics/placeholderpic.png";
 import Aduilttraining from "../../components/Aduilttraining";
 
 function Aduiltprofile() {
@@ -16,7 +18,7 @@ function Aduiltprofile() {
   // getting users data from server using the id that was retrieved
   useEffect(() => {
     axios
-      .post(`http://localhost/php-react/oban-scouts-php/getaduilt.php?id=${id}`)
+      .get(`http://localhost/php-react/oban-scouts-php/getaduilt.php?id=${id}`)
       .then((response) => setUserData(response.data))
       .catch((error) => console.error(error));
     setloading(true);
@@ -95,6 +97,9 @@ function Aduiltprofile() {
                   </ul>
 
                   {/* /////////////test area //////////////// */}
+
+          <ProfilePictureUploader></ProfilePictureUploader>
+          <ProfilePicture pictureId={4} />
 
                   {/* ///////////////////////////////// */}
                 </div>
