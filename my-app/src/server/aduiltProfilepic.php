@@ -16,7 +16,7 @@ if (!$conn) {
 }
 
 // Get the ID of the picture to retrieve
-$id = $_GET["id"];
+$id = 5;
 
 // Prepare a SQL query to retrieve the image data
 $stmt = $conn->prepare

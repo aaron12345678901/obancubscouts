@@ -99,7 +99,7 @@ function Aduiltprofile() {
                   {/* /////////////test area //////////////// */}
 
           <ProfilePictureUploader></ProfilePictureUploader>
-          <ProfilePicture pictureId={4} />
+          <ProfilePicture  />
 
                   {/* ///////////////////////////////// */}
                 </div>
