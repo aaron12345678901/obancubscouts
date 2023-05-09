@@ -3,7 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Aduiltnav from "../../components/Aduiltnav";
 import ProfilePictureUploader from "../../components/ProfilePictureUploader";
-import ProfilePicture from "../../components/ProfilePicture";
 import placeholder from "../../images/profilepics/placeholderpic.png";
 import Aduilttraining from "../../components/Aduilttraining";
 
@@ -99,7 +98,8 @@ function Aduiltprofile() {
                   {/* /////////////test area //////////////// */}
 
           <ProfilePictureUploader></ProfilePictureUploader>
-          <ProfilePicture  />
+         
+          
 
                   {/* ///////////////////////////////// */}
                 </div>
