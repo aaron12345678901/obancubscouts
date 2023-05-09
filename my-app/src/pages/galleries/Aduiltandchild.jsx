@@ -1,3 +1,6 @@
+import Uploadpicgal from "../../components/Uploadpicgal";
+
+
 import arrowleft from "../../images/arrow-left.png";
 import arrowright from "../../images/arrow-right.png";
 import gallerymain1st from "../../images/gallery/gallerymain1st.png";
@@ -15,6 +18,7 @@ function Aduiltandchild() {
   return (
     <div className="Aduiltandchild-main">
       <div className="main-photo-container">
+        
         <div className="main-photo-heading">
           <h1>Latest Events</h1>
         </div>
@@ -36,6 +40,21 @@ function Aduiltandchild() {
           </div>
         </div>
       </div>
+
+      {/* test area */}
+
+
+
+      
+
+       <Uploadpicgal></Uploadpicgal>
+
+
+
+
+
+
+      {/*  */}
 
       <div className="gal-second-heading">
         <h2>Past Event photos</h2>
@@ -150,7 +169,7 @@ function Aduiltandchild() {
           </div>
         </div>
 
-        <div className="ggal--item-container">
+        <div className="gal--item-container">
           <div className="gal-img">
             {" "}
             <img src={gal9th} alt="" />
@@ -162,6 +181,8 @@ function Aduiltandchild() {
             <p>10 day ago </p>
           </div>
         </div>
+
+
       </div>
     </div>
   );
