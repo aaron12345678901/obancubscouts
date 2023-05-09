@@ -31,7 +31,16 @@ if (!isset($_FILES["file"]) || $_FILES["file"]["error"] !== UPLOAD_ERR_OK) {
   $fileContent = file_get_contents($_FILES["file"]["tmp_name"]);
   
   // Insert file into database
-  $stmt = $conn->prepare("INSERT INTO profile_pictures (name, type, size, content) VALUES (?, ?, ?, ?)");
+  $stmt = $conn->prepare
+  
+  
+  (                    "INSERT INTO profile_pictures
+                        (name, type, size, content) 
+                        VALUES (?, ?, ?, ?)");
+
+
+
+
   $stmt->bind_param("ssis", $fileName, $fileType, $fileSize, $fileContent);
   
   if ($stmt->execute()) {

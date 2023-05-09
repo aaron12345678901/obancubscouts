@@ -1034,8 +1034,10 @@
 }
 
 .profile-pic img {
-  width: 107%;
-  height: 110%;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid red;
 }
 
 .name-logout ul {
@@ -1148,8 +1150,14 @@
   width: 100%;
 }
 
+.Aprofilepic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .Aprofilepic {
-  width: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1458,4 +1466,9 @@
 .training-border {
   border: solid black 1px;
   width: 80%;
+}
+
+.Aprofilepic button {
+  background-color: #b080f2;
+  border: none;
 }/*# sourceMappingURL=app.css.map */

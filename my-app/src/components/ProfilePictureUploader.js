@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import placeholder from "../images/profilepics/placeholderpic.png";
+
 
 function ProfilePictureUploader() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -25,10 +27,31 @@ function ProfilePictureUploader() {
   };
 
   return (
+
+
     <div>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload</button>
+
+                <div className="Aprofilepic">
+
+
+                <img src={placeholder} alt="" />
+
+
+                 <input type="file" onChange={handleFileChange} />
+                  
+
+                  <button onClick={handleUpload}>
+                  <p>click to change profile picture </p>
+                  </button>
+
+    
+
+                </div>
+
+     
     </div>
+
+
   );
 }
 

@@ -20,8 +20,10 @@
 }
 
 .profile-pic img{
-    width: 107%;
-    height: 110%;
+  
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid red;
    
 }
 

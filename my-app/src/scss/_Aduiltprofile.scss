@@ -63,8 +63,17 @@
   width: 100%;
 }
 
+
+/////////////////////////  profile pic upload //////////////
+
+.Aprofilepic-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .Aprofilepic {
-  width: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +87,11 @@
   width: 151px;
   height: 145px;
 }
+
+
+// //////////////////////////
+
+
 
 .A-names {
   width: 70%;

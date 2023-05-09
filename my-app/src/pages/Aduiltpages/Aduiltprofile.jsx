@@ -41,10 +41,17 @@ function Aduiltprofile() {
           <div className="A-profile-card">
             <div className="A-inner-profile-card">
               <div className="profilepic-and-names">
-                <div className="Aprofilepic">
-                  <img src={placeholder} alt="" />
-                  <p>click to change profile picture </p>
-                </div>
+              
+                  <div className="Aprofilepic-container">
+
+
+                  <ProfilePictureUploader></ProfilePictureUploader>
+
+
+                  </div>
+
+
+                  
 
                 <div className="A-names">
                   <div className="A-names-seperates">
@@ -95,13 +102,7 @@ function Aduiltprofile() {
                     </li>
                   </ul>
 
-                  {/* /////////////test area //////////////// */}
-
-          <ProfilePictureUploader></ProfilePictureUploader>
-         
-          
-
-                  {/* ///////////////////////////////// */}
+       
                 </div>
               </div>
             </div>
