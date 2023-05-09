@@ -16,15 +16,17 @@ if (!$conn) {
 }
 
 // Get the ID of the picture to retrieve
-$id = 5;
+
+$id = $_GET['id'];
 
 // Prepare a SQL query to retrieve the image data
-$stmt = $conn->prepare
-
-("SELECT type, content 
-                        FROM profile_pictures 
-                        WHERE id = ?");
-
+$stmt = $conn->prepare("
+    SELECT profile_pictures.type, profile_pictures.content 
+    FROM user
+    INNER JOIN profile_pictures
+    ON profile_pictures.fk_user  = user.id
+    WHERE user.id = ?
+");
 
 $stmt->bind_param("i", $id);
 $stmt->execute();
@@ -47,4 +49,3 @@ if ($stmt->num_rows == 1) {
 
 $stmt->close();
 $conn->close();
-?>
