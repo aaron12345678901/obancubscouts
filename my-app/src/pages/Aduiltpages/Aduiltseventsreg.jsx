@@ -1,8 +1,6 @@
 import event1 from "../../images/aduilts-reg-events/aduiltevent.png";
 import event2 from "../../images/aduilts-reg-events/aduiltevent2.png";
 import event3 from "../../images/aduilts-reg-events/aduiltevent3.png";
-import arrowleft from "../../images/arrow-left.png";
-import arrowright from "../../images/arrow-right.png";
 import Aduiltnav from "../../components/Aduiltnav";
 
 function Aduiltseventsreg() {
@@ -15,7 +13,7 @@ function Aduiltseventsreg() {
     <div className="Aduiltprofile-main">
       <div className="A-profile-align">
         <h1>my events  </h1>
-        <p>events you have registered to help </p>
+        <p>events you can register to help </p>
 
         
 
@@ -46,10 +44,7 @@ function Aduiltseventsreg() {
               </div>
               </div>
 
-              <div className="aduilt-events-arrows">
-                <div className="aduilt-event-arrow"> <img src={arrowleft} alt="" /></div>
-                <div className="aduilt-event-arrow"><img src={arrowright} alt="" /></div>
-              </div>
+         
 
 
            </div>

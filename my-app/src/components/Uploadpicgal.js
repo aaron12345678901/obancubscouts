@@ -37,11 +37,16 @@ formData.append("description", description);
   return (
     <div>
       <div className="gallery-upload">
+      
+      <div className="gal-second-heading">
+        <h2>upload photo</h2>
+      </div>
 
       
         <input type="file" onChange={handleFileChange} />
-
-        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
+        
+        <label for="description">description:</label>
+        <input type="text" id="description" value={description} onChange={(e) => setDescription(e.target.value)} />
 
         <button onClick={handleUpload}>
           <p>click to submit photo</p>
