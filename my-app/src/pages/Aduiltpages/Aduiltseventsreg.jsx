@@ -1,6 +1,4 @@
-import event1 from "../../images/aduilts-reg-events/aduiltevent.png";
-import event2 from "../../images/aduilts-reg-events/aduiltevent2.png";
-import event3 from "../../images/aduilts-reg-events/aduiltevent3.png";
+
 import Aduiltnav from "../../components/Aduiltnav";
 import React, { useState } from "react";
 import axios from "axios";

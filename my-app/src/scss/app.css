@@ -1348,6 +1348,12 @@
   font-weight: 100;
 }
 
+@media screen and (max-width: 540px) {
+  .cprofile-first-line {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .aduilt-events-nav {
   display: flex;
   flex-direction: row;
@@ -1388,6 +1394,12 @@
   height: 175px;
 }
 
+@media screen and (max-width: 540px) {
+  .cprofile-first-line {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .aduilt-reg-help-nav {
   display: flex;
   flex-direction: row;
