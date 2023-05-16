@@ -36,10 +36,12 @@
   font-family: Ibarra Real Nova;
   font-size: 2rem;
   font-weight: 200;
+  
 }
 
 .profile-head-elements h2 {
   padding-left: 30px;
+
 }
 
 .A-profile-card {
@@ -108,15 +110,19 @@
   width: 50%;
 }
 
-.A-names-seperates p {
- 
+.profile-names{
   background-color: #7c55b2;
-  height: 54px;
+  margin: 10px;
   width: 100%;
   color: white;
   font-size: 2rem;
   border: black solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 .A-aboutme {
   width: 100%;
@@ -124,7 +130,10 @@
   min-height: 143px;
   color: white;
   font-size: 1.5rem;
+  border: black 1px solid;
 }
+
+
 
 .A-aboutme p{
   padding: 5%;
@@ -164,4 +173,19 @@
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .profilepic-and-names {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .A-names{
+   width: 100%;
+  }
 }

@@ -57,7 +57,9 @@ function Aduiltprofile() {
                     {loading
                       ? userData.map((data) => (
                           <>
+                          <div className="profile-names">
                             <p>First Name: {data.first_name}</p>
+                         </div>
                           </>
                         ))
                       : null}
@@ -65,7 +67,9 @@ function Aduiltprofile() {
                     {loading
                       ? userData.map((data) => (
                           <>
+                          <div className="profile-names">
                             <p>Surname: {data.last_name}</p>
+                            </div>
                           </>
                         ))
                       : null}
