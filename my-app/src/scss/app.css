@@ -1054,6 +1054,7 @@
   width: 253px;
   border-radius: 16%;
   border: #B080F2 2px solid;
+  box-shadow: 0px 3px 5px black;
 }
 
 .row-separator {
@@ -1339,24 +1340,27 @@
 .aduilt-profile-events-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.aduilt-reg-event {
+.aduilt-events div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-}
-
-.aduilt-reg-event img {
-  width: 250px;
-  height: 250px;
+  padding-top: 10%;
   position: relative;
 }
 
-.aduilt-events-p {
+.aduilt-events img {
+  width: 250px;
+  height: 250px;
   position: absolute;
+}
+
+.aduilt-events p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1366,18 +1370,6 @@
   color: grey;
   width: 175px;
   height: 175px;
-}
-
-.aduilt-events-arrows {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.aduilt-event-arrow {
-  padding: 10px;
 }
 
 .aduilt-reg-help-nav {
