@@ -39,11 +39,16 @@
 }
 
 
-@media screen and (max-width: 540px) {
-  .cprofile-first-line {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 349px) {
+  .aduilt-events img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+  } 
 
+  .aduilt-events p{
+    width: 50%;
+    height: 50%;
   }
 
  
