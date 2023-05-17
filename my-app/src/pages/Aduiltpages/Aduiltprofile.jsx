@@ -6,21 +6,53 @@ import ProfilePictureUploader from "../../components/ProfilePictureUploader";
 import Aduilttraining from "../../components/Aduilttraining";
 
 function Aduiltprofile() {
-  // two states one to store user data and one to see if data is still loading
   const [userData, setUserData] = useState([]);
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [updating, setUpdating] = useState(false);
 
-  // getting id from local storage and converting to a javascript object to be used
+  let navigate = useNavigate();
   let id = JSON.parse(window.localStorage.getItem("id"));
 
-  // getting users data from server using the id that was retrieved
   useEffect(() => {
     axios
       .get(`http://localhost/php-react/oban-scouts-php/getaduilt.php?id=${id}`)
-      .then((response) => setUserData(response.data))
+      .then((response) => {
+        setUserData(response.data);
+        setLoading(true);
+      })
       .catch((error) => console.error(error));
-    setloading(true);
   }, []);
+
+  function edit(event) {
+    event.preventDefault();
+    const days = document.getElementById("days").value;
+    const time = document.getElementById("time").value;
+    navigate(`/Aduiltprofile`);
+    setUpdating(true);
+
+    axios
+      .post(
+        `http://localhost/php-react/oban-scouts-php/aduiltedit.php?id=${id}&days=${days}&time=${time}`
+      )
+      .then((response) => {
+        if (response.data.success) {
+          setUserData((prevData) => {
+            const newData = [...prevData];
+            newData.forEach((data) => {
+              data.days_available = days;
+              data.times_available = time;
+            });
+            return newData;
+          });
+        } else {
+          console.log("Failed to update availability");
+        }
+      })
+      .catch((error) => console.error(error))
+      .finally(() => {
+        setUpdating(false);
+      });
+  }
 
   return (
     <div className="Aduilt-nav-main">
@@ -40,37 +72,25 @@ function Aduiltprofile() {
           <div className="A-profile-card">
             <div className="A-inner-profile-card">
               <div className="profilepic-and-names">
-              
-                  <div className="Aprofilepic-container">
-
-
-                  <ProfilePictureUploader></ProfilePictureUploader>
-
-
-                  </div>
-
-
-                  
+                <div className="Aprofilepic-container">
+                  <ProfilePictureUploader />
+                </div>
 
                 <div className="A-names">
                   <div className="A-names-seperates">
                     {loading
                       ? userData.map((data) => (
-                          <>
-                          <div className="profile-names">
+                          <div className="profile-names" key={data.id}>
                             <p>First Name: {data.first_name}</p>
-                         </div>
-                          </>
+                          </div>
                         ))
                       : null}
 
                     {loading
                       ? userData.map((data) => (
-                          <>
-                          <div className="profile-names">
+                          <div className="profile-names" key={data.id}>
                             <p>Surname: {data.last_name}</p>
-                            </div>
-                          </>
+                          </div>
                         ))
                       : null}
                   </div>
@@ -80,9 +100,7 @@ function Aduiltprofile() {
               <div className="A-aboutme">
                 {loading
                   ? userData.map((data) => (
-                      <>
-                        <p>About me: {data.about_me}</p>
-                      </>
+                      <p key={data.id}>About me: {data.about_me}</p>
                     ))
                   : null}
               </div>
@@ -93,19 +111,52 @@ function Aduiltprofile() {
                     <li>
                       {loading
                         ? userData.map((data) => (
-                            <>disclosure: {data.disclosure}</>
+                            <span key={data.id}>disclosure: {data.disclosure}</span>
                           ))
                         : null}
                     </li>
                     <li id="no-underline">training attended</li>
 
                     <li>
-                      {" "}
-                      <Aduilttraining />{" "}
+                      <Aduilttraining />
                     </li>
                   </ul>
+                </div>
 
-       
+                <div className="aduilt-avail">
+                  <h2>Availability</h2>
+
+                  {loading
+                    ? userData.map((data) => (
+                        <div key={data.id}>
+                          <div className="day-time-seperator">
+                            <label htmlFor="days">days:</label>
+                            <input
+                              id="days"
+                              type="text"
+                              defaultValue={data.days_available}
+                              name="days"
+                            />
+                          </div>
+
+                          <div className="day-time-seperator">
+                            <label htmlFor="time">time:</label>
+                            <input
+                              id="time"
+                              type="text"
+                              defaultValue={data.times_available}
+                              name="time"
+                            />
+                          </div>
+                        </div>
+                      ))
+                    : null}
+
+                  {updating ? (
+                    <div>Loading...</div>
+                  ) : (
+                    <button onClick={edit}>Change Availability</button>
+                  )}
                 </div>
               </div>
             </div>

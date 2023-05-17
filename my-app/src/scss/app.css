@@ -1336,7 +1336,54 @@
   .A-names {
     width: 100%;
   }
+  .aduilt-pro-bottom-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+.aduilt-avail h2 {
+  color: white;
+  font-family: Josefin Sans;
+  text-align: center;
+}
+
+.day-time-seperator {
+  padding: 10px;
+}
+
+.aduilt-avail label {
+  color: white;
+  font-family: Josefin Sans;
+  padding-right: 10px;
+}
+
+.aduilt-avail input {
+  background-color: #7c55b2;
+  color: white;
+}
+
+.aduilt-avail input:hover {
+  border: orangered solid 2px;
+  color: orangered;
+}
+
+.aduilt-avail button {
+  background-color: #7c55b2;
+  width: 50%;
+  margin: 30px;
+  border-radius: 12px;
+  height: 40px;
+  border: black solid 2px;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+}
+
+.aduilt-avail button:hover {
+  border: orangered solid 2px;
+  color: orangered;
+}
+
 .aduilts-childp-nav {
   display: flex;
   flex-direction: row;
@@ -1571,8 +1618,21 @@
 .training-border {
   border: solid black 1px;
   width: 80%;
+  padding-bottom: 1px;
+  background-color: black;
+  margin-bottom: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .training-event {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 350px) {
+  .training-event {
+    align-items: start;
+  }
+}
 .Aprofilepic button {
   background-color: #b080f2;
   border: none;

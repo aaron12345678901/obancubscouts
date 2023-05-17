@@ -79,4 +79,21 @@ color: white;
  .training-border{
   border: solid black 1px;
   width: 80%;
+  padding-bottom: 1px;
+ background-color: black;
+ margin-bottom: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  .training-event {
+   flex-direction: column;
+  }
+   
+  }
+
+  @media screen and (max-width: 350px) {
+    .training-event {
+    align-items: start;
+    }
+     
+    }
