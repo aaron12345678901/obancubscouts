@@ -38,3 +38,11 @@
 
  
 }
+
+
+@media screen and (max-width: 650px) {
+  .aduilts-childp-nav{
+    display: flex;
+    flex-direction: column;
+  }
+}

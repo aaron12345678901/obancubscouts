@@ -223,3 +223,11 @@
   border: orangered solid 2px;
   color:orangered  ;
 }
+
+
+@media screen and (max-width: 650px) {
+  .Aduilt-nav-main {
+ 
+    flex-direction: column;
+  }
+}

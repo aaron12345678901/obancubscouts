@@ -41,3 +41,13 @@
     border: orangered solid 2px;
     color:orangered  ;
 }
+
+
+
+@media screen and (max-width: 650px) {
+    .aduilt-reg-help-nav{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

@@ -1086,14 +1086,6 @@
   width: 100%;
 }
 
-.Aduilt-nav {
-  width: 15%;
-}
-
-.Aduilt-content {
-  width: 85%;
-}
-
 .Aduiltnav-main {
   display: flex;
   flex-direction: column;
@@ -1384,6 +1376,11 @@
   color: orangered;
 }
 
+@media screen and (max-width: 650px) {
+  .Aduilt-nav-main {
+    flex-direction: column;
+  }
+}
 .aduilts-childp-nav {
   display: flex;
   flex-direction: row;
@@ -1416,6 +1413,12 @@
 
 @media screen and (max-width: 540px) {
   .cprofile-first-line {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .aduilts-childp-nav {
     display: flex;
     flex-direction: column;
   }
@@ -1471,6 +1474,12 @@
     height: 50%;
   }
 }
+@media screen and (max-width: 650px) {
+  .aduilt-events-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .aduilt-reg-help-nav {
   display: flex;
   flex-direction: row;
@@ -1513,6 +1522,12 @@
   color: orangered;
 }
 
+@media screen and (max-width: 650px) {
+  .aduilt-reg-help-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .reg-disc-text {
   color: white;
   padding: 10px;
@@ -1544,6 +1559,12 @@
   flex-direction: row;
 }
 
+@media screen and (max-width: 650px) {
+  .Aduiltdiscmain {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .aduilt-reg-training-nav {
   display: flex;
   flex-direction: row;

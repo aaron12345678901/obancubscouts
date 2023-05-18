@@ -53,3 +53,12 @@
 
  
 }
+
+
+@media screen and (max-width: 650px) {
+  .aduilt-events-nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
