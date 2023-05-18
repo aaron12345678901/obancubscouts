@@ -1,7 +1,6 @@
-import profilepic from "../images/profilepics/aduilt-profile-pic.png";
 import { Outlet, Link } from "react-router-dom";
 import ProfilePicture from "./ProfilePicture";
-
+import Logout from "./Logout";
 function Aduiltnav() {
   return (
     <div className="Aduiltnav-main">
@@ -11,12 +10,9 @@ function Aduiltnav() {
       </div>
 
       <div className="name-logout">
-        <ul>
-          <li>Jhon doe</li>
-          <li id="Alogout">Log out</li>
-        </ul>
+           <Logout/>
       </div>
-
+     
       <div className="nav-border"></div>
 
       <div className="Aduilt-nav-links">

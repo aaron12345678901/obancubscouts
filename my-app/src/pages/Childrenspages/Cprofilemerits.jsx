@@ -1,20 +1,19 @@
-import cprofile from "../../images/profilepics/cprofilepic.png";
-import arrowleft from "../../images/arrow-left.png";
-import arrowright from "../../images/arrow-right.png";
+import {  Link } from "react-router-dom";
 import badge3 from "../../images/Badges/badge3.png";
 import badge2 from "../../images/Badges/badge2.png";
 import badge5 from "../../images/Badges/badge5.png";
 import badge6 from "../../images/Badges/badge6.png";
 import badge8 from "../../images/Badges/badge8.png";
 import badge9 from "../../images/Badges/badge9.png";
+import ProfilePicture from "../../components/ProfilePicture";
 
 function Cprofilemerits() {
   return (
     <div className="childrens-profile">
       <div className="profile-container">
         <div className="cprofile-first-line">
-          <div className="profile-img">
-            <img src={cprofile} alt="" />
+          <div className="profile-pic">
+          <ProfilePicture/>
           </div>
 
           <div className="cfirst-details">
@@ -23,20 +22,7 @@ function Cprofilemerits() {
             <p>Term of service: 2y 10 m</p>
           </div>
         </div>
-        <div className="merit-counter">
-          <p>17 out of 200</p>
-          <p>merit badges achieved </p>
-        </div>
-        <div className="arrow-container">
-          <div className="arrow-1">
-            {" "}
-            <img src={arrowleft} alt="" />
-          </div>
-          <div className="arrow-2">
-            {" "}
-            <img src={arrowright} alt="" />
-          </div>
-        </div>
+ 
 
         <div className="cprofile-badges-container">
           <div className="cprofile-badge-order">
@@ -79,6 +65,12 @@ function Cprofilemerits() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="cprofile-button">
+
+        <Link to="/Childrensprofile">
+          <button>Back</button> </Link>
         </div>
       </div>
     </div>

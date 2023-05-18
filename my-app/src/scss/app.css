@@ -847,6 +847,9 @@
 .cprofile-first-line {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .profile-img {
@@ -1120,13 +1123,26 @@
   font-size: 1.5rem;
 }
 
-.name-logout li {
+.name-logout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.logout_btn button {
   padding: 2px;
+  background-color: #B080F2;
+}
+
+.logout_btn button:hover {
+  font-size: 2rem;
 }
 
 .nav-border {
   width: 80%;
-  border: black solid 2px;
+  border: black solid 1px;
 }
 
 .Aduilt-nav-links {

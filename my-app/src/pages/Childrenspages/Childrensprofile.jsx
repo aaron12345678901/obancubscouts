@@ -1,7 +1,8 @@
-import cprofile from "../../images/profilepics/cprofilepic.png";
+
 import {  Link } from "react-router-dom";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import ProfilePicture from "../../components/ProfilePicture";
 
 function Childrensprofile() {
   // two states one to store user data and one to see if data is still loading
@@ -26,12 +27,16 @@ function Childrensprofile() {
 
 
 
+
+
+
   return (
     <div className="childrens-profile">
       <div className="profile-container">
         <div className="cprofile-first-line">
-          <div className="profile-img">
-            <img src={cprofile} alt="" />
+          <div className="profile-pic">
+             <ProfilePicture/>
+            {/* <img src={cprofile} alt="" /> */}
           </div>
 
           <div className="cfirst-details">

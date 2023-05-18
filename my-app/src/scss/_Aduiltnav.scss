@@ -7,6 +7,8 @@
    height: 100%;
 }
 
+
+
 .profile-pic{
    margin: 5px;
    width: 152px;
@@ -35,14 +37,30 @@
     
 }
 
-.name-logout li{
-    padding: 2px;
-    
+.name-logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    padding-bottom: 10px;
 }
+
+.logout_btn button{
+    padding: 2px;
+    background-color: #B080F2;
+}
+
+.logout_btn button:hover{
+    font-size: 2rem;
+}
+
+
+
+
 
 .nav-border{
     width: 80%;
-    border: black solid 2px;
+    border: black solid 1px;
 }
 
 .Aduilt-nav-links{
