@@ -33,6 +33,11 @@ function Header() {
             <Link to="Badges">
               <li><button>Badges</button></li>
             </Link>
+
+            <Link to="Gallery">
+              <li><button>gallery</button></li>
+            </Link>
+
           </ul>
         </div>
 

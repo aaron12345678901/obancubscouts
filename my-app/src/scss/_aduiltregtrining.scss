@@ -97,3 +97,10 @@ color: white;
     }
      
     }
+
+    @media screen and (max-width: 650px) {
+      .aduilt-reg-training-nav{
+        display: flex;
+        flex-direction: column;
+      }
+    }

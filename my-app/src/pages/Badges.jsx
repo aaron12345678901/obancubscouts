@@ -1,5 +1,5 @@
 import React from "react";
-
+import Badgeelement from "../components/Badgeelement";
 import badge1 from "../images/Badges/badge1.png";
 import badge2 from "../images/Badges/badge2.png";
 import badge3 from "../images/Badges/badge3.png";
@@ -23,7 +23,12 @@ function Badges() {
         <h1>scouts activity badges </h1>
       </div>
 
-      <div className="first-badges">
+<Badgeelement></Badgeelement>
+
+
+
+
+      {/* <div className="first-badges">
         <div className="badge1">
           <img src={badge1} alt="" />
           <p id="badgep">Artist</p>
@@ -106,7 +111,7 @@ function Badges() {
           <img src={badge15} alt="" />
           <p id="badgep">camping</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
