@@ -1,5 +1,4 @@
-
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import ProfilePicture from "../../components/ProfilePicture";
@@ -19,29 +18,18 @@ function Childrensprofile() {
       .then((response) => setUserData(response.data))
       .catch((error) => console.error(error));
     setloading(true);
-    
-
-
   }, []);
-
-
-
-
-
-
 
   return (
     <div className="childrens-profile">
       <div className="profile-container">
         <div className="cprofile-first-line">
           <div className="profile-pic">
-             <ProfilePicture/>
-            {/* <img src={cprofile} alt="" /> */}
+            <ProfilePicture />
           </div>
 
           <div className="cfirst-details">
-
-          {loading
+            {loading
               ? userData.map((data) => (
                   <>
                     <p>name:{data.first_name}</p>
@@ -50,27 +38,32 @@ function Childrensprofile() {
                   </>
                 ))
               : null}
-
-
           </div>
         </div>
 
         <div className="cprofile-merits">
           <h2>outstanding merits:</h2>
           {loading
-              ? userData.map((data) => (
-                  <>
-                    <p>{data.outstanding_merit}</p>
-                   
-                  </>
-                ))
-              : null}
+            ? userData.map((data) => (
+                <>
+                  <p>{data.outstanding_merit}</p>
+                </>
+              ))
+            : null}
         </div>
 
-        <div className="cprofile-button">
+        <div className="cprofile_button_layout">
+          <div className="cprofile-button">
+            <Link to="/Cprofilemerits">
+              <button>merit badges</button>{" "}
+            </Link>
+          </div>
 
-        <Link to="/Cprofilemerits">
-          <button>merit badges</button> </Link>
+          <div className="cprofile-button">
+            <Link to="/Childsgallery">
+              <button>Gallery</button>{" "}
+            </Link>
+          </div>
         </div>
       </div>
     </div>

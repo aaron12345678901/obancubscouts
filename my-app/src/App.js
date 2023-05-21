@@ -12,6 +12,7 @@ import Gallery from "./pages/Gallery";
 
 import Childrensprofile from "./pages/Childrenspages/Childrensprofile";
 import Cprofilemerits from "./pages/Childrenspages/Cprofilemerits";
+import Childsgallery from "./pages/galleries/Childsgallery";
 
 
 import Aduiltandchild from "./pages/galleries/Aduiltandchild";
@@ -53,7 +54,9 @@ function App() {
 
           <Route path="/childrensprofile" element={<Childrensprofile />} />
           <Route path="/cprofilemerits" element={<Cprofilemerits />} />
-          
+          <Route path="/Childsgallery" element={<Childsgallery />} />
+
+
           <Route path="/aduiltlanding" element={<Aduiltlanding />} />
           <Route path="/Aduiltregdisclosure"element={<Aduiltregdisclosure />}/>
           <Route path="/Aduiltandchild"element={<Aduiltandchild />}/>
