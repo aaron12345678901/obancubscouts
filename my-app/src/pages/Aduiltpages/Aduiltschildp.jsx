@@ -79,9 +79,14 @@ function Aduiltschildp() {
               : null}
           </div>
 
+
+    <div className="aduilt-button-placement">
           <div className="cprofile-button">
             <button>merit badges</button>
           </div>
+          
+          </div>
+
         </div>
       </div>
     </div>

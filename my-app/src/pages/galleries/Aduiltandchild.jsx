@@ -6,6 +6,7 @@ import gallerymain1st from "../../images/gallery/gallerymain1st.png";
 function Aduiltandchild() {
   return (
     <div className="Aduiltandchild-main">
+      <h1>Gallery</h1>
       
       <div className="main-photo-container">
         

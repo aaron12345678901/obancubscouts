@@ -4,6 +4,7 @@ import gallerymain1st from "../images/gallery/gallerymain1st.png";
 function Gallery() {
   return (
     <div className="Aduiltandchild-main">
+      <h1>Gallery</h1>
       <div className="main-photo-container">
         <div className="main-photo-heading">
           <h1>Latest Event</h1>

@@ -8,6 +8,7 @@ function Childsgallery() {
     <div className="childrens-profile">
       <div className="profile-container">
         <div className="Aduiltandchild-main">
+          <h1>Gallery</h1>
           <div className="main-photo-container">
             <div className="main-photo-heading">
               <h1>Latest Event</h1>
