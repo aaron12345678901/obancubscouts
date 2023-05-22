@@ -14,7 +14,8 @@ function Header() {
             <p>oban cub scouts</p>
           </div>
         </div>
-        <div className="header-border"></div>
+        
+        <div className="header-links-layout">
 
         <div className="first-header-links">
           <ul>
@@ -49,6 +50,7 @@ function Header() {
         </div>
       </div>
 
+</div>
       <div className="header-second-line">
         <div className="header-main-img"></div>
       </div>

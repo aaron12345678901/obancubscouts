@@ -48,7 +48,7 @@ const Log = () => {
           window.localStorage.setItem('email', result.data.email);
           window.localStorage.setItem('userName', (result.data.first_name + ' ' + result.data.first_name ));
           window.localStorage.setItem('id', result.data.id);
-          navigate(`/Admindash`);
+          navigate(`/Adminregaduilts`);
           console.log("admin");
         }
         

@@ -27,6 +27,8 @@ import Aduiltschildp from "./pages/Aduiltpages/Aduiltschildp";
 import Aduiltchildmerits from "./pages/Aduiltpages/Aduiltchildmerits";
 import Aduiltseventsreg from "./pages/Aduiltpages/Aduiltseventsreg";
 
+import Adminregaduilts from "./pages/Admin/Adminregaduilts";
+import Adminregprofile from "./pages/Admin/Adminregprofile";
 
 
 
@@ -67,6 +69,9 @@ function App() {
           <Route path="/Aduiltchildmerits"element={<Aduiltchildmerits />}/>
           <Route path="/Aduiltseventsreg"element={<Aduiltseventsreg />}/>
           <Route path="/Aduiltgallery"element={<Aduiltgallery />}/>
+
+          <Route path="/Adminregaduilts"element={<Adminregaduilts />}/>
+          <Route path="/Adminregprofile/:id"element={<Adminregprofile />}/>
 
 
         </Routes>
