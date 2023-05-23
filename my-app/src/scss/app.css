@@ -893,6 +893,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .logout_btn button {
@@ -1561,4 +1562,36 @@
     align-items: center;
     flex-direction: column;
   }
+}
+.admin-profile-container {
+  width: 80%;
+  background-color: #f0af49;
+  flex-direction: column;
+  border: black 2px solid;
+  border-radius: 10%;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-childrens-profile {
+  background-color: #7c55b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-child-profile-inner {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.admin_submit_button {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=app.css.map */

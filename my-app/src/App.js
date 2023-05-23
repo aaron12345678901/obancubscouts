@@ -18,7 +18,6 @@ import Childsgallery from "./pages/galleries/Childsgallery";
 import Aduiltandchild from "./pages/galleries/Aduiltandchild";
 import Aduiltgallery  from "./pages/Aduiltpages/Aduiltgallery"
 import Aduiltlanding from "./pages/Aduiltpages/Aduiltlanding"
-import Aduiltnav from "./components/Aduiltnav";
 import Aduiltregdisclosure from "./pages/Aduiltpages/Aduiltregdisclosure";
 import Aduiltprofile from "./pages/Aduiltpages/Aduiltprofile";
 import Aduiltreghelper from "./pages/Aduiltpages/Aduiltreghelper";
@@ -29,7 +28,9 @@ import Aduiltseventsreg from "./pages/Aduiltpages/Aduiltseventsreg";
 
 import Adminregaduilts from "./pages/Admin/Adminregaduilts";
 import Adminregprofile from "./pages/Admin/Adminregprofile";
-
+import Adminchildren from "./pages/Admin/Adminchildren";
+import Adminchildprofile from "./pages/Admin/Adminchildprofile";
+import Adminchildmerits from "./pages/Admin/Adminchildmerits";
 
 
 
@@ -72,7 +73,9 @@ function App() {
 
           <Route path="/Adminregaduilts"element={<Adminregaduilts />}/>
           <Route path="/Adminregprofile/:id"element={<Adminregprofile />}/>
-
+          <Route path="/Adminchildren"element={<Adminchildren />}/>
+          <Route path="/Adminchildprofile/:id"element={<Adminchildprofile />}/>
+          <Route path="/Adminchildmerits/:id"element={<Adminchildmerits />}/>
 
         </Routes>
 

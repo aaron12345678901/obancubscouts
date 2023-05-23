@@ -1,0 +1,35 @@
+.admin-profile-container {
+    width: 80%;
+    background-color: #f0af49;
+    flex-direction: column;
+    border: black 2px solid;
+    border-radius: 10%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .admin-childrens-profile {
+    background-color:#7c55b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.admin-child-profile-inner{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.admin_submit_button{
+  margin-bottom: 10px;
+}

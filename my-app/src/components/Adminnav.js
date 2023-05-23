@@ -20,7 +20,7 @@ function Adminnav() {
 
           <li>
             {" "}
-            <Link to="/Adminregaduilts">registered children</Link>
+            <Link to="/Adminchildren">registered children</Link>
           </li>
 
         </ul>
