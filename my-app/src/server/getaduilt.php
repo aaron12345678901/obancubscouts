@@ -25,7 +25,7 @@ if (!$conn) {
 
 
 // Retrieve data from the database based on the user's ID
-$sql = "SELECT user.first_name,user.last_name,aduilt_details.about_me,aduilt_details.disclosure,aduilt_details.days_available,aduilt_details.times_available
+$sql = "SELECT user.first_name,user.last_name,aduilt_details.is_Helper,aduilt_details.about_me,aduilt_details.disclosure,aduilt_details.days_available,aduilt_details.times_available
 FROM user
 INNER JOIN aduilt_details
 ON user.fk_aduilt_details = aduilt_details.id

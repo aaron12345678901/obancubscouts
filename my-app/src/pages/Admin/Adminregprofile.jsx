@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Adminnav from "../../components/Adminnav";
-import Aduilttraining from "../../components/Aduilttraining";
+import Admingetaduilttraining from "../../components/Admingetaduilttraining";
 import ProfilePicture from "../../components/ProfilePicture";
 
 function Adminregprofile() {
@@ -25,9 +25,11 @@ function Adminregprofile() {
   }, []);
 
   useEffect(() => {
-  
     axios
-      .get(`http://localhost/php-react/oban-scouts-php/aduiltProfilepic.php?id=${id}`, { responseType: "blob" })
+      .get(
+        `http://localhost/php-react/oban-scouts-php/aduiltProfilepic.php?id=${id}`,
+        { responseType: "blob" }
+      )
       .then((response) => {
         // Convert the image data to a URL and set it as the state variable
         const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -39,24 +41,9 @@ function Adminregprofile() {
       });
   }, []);
 
+  // test //////////////////////////
 
-
-// test //////////////////////////
-
-
-
-
-
-
-
-
-
-
-// test //////////////////////////
-
-
-
-
+  // test //////////////////////////
 
   function edit(event) {
     event.preventDefault();
@@ -64,7 +51,6 @@ function Adminregprofile() {
     const last_name = document.getElementById("last_name").value;
     const disclosure = document.getElementById("disclosure").value;
     const about_me = document.getElementById("about_me").value;
-
 
     navigate(`/Adminregaduilts`);
     setUpdating(true);
@@ -82,7 +68,6 @@ function Adminregprofile() {
               data.last_name = last_name;
               data.disclosure = disclosure;
               data.about_me = about_me;
-
             });
             return newData;
           });
@@ -115,10 +100,8 @@ function Adminregprofile() {
             <div className="A-inner-profile-card">
               <div className="profilepic-and-names">
                 <div className="Aprofilepic-container-admin">
-
-                {imageSrc && <img src={imageSrc} alt="Database Image" />}
-                {!imageSrc && <p>Loading...</p>}
-                  
+                  {imageSrc && <img src={imageSrc} alt="Database Image" />}
+                  {!imageSrc && <p>Loading...</p>}
                 </div>
 
                 <div className="A-names">
@@ -161,7 +144,7 @@ function Adminregprofile() {
                       <input
                         id="about_me"
                         type="text"
-                        title={data.about_me} 
+                        title={data.about_me}
                         defaultValue={data.about_me}
                         name="about_me"
                       />
@@ -191,7 +174,7 @@ function Adminregprofile() {
                     <li id="no-underline">training attended</li>
 
                     <li>
-                      <Aduilttraining />
+                      <Admingetaduilttraining />
                     </li>
                   </ul>
                 </div>
@@ -202,13 +185,14 @@ function Adminregprofile() {
                   {loading
                     ? userData.map((data) => (
                         <div key={data.id}>
-                        
-                            <p>days:</p> 
-                            <p>{data.days_available}</p>
+                          <p>days:</p>
+                          <p>{data.days_available}</p>
 
-                        
-                            <p>times:</p>
-                            <p>{data.times_available}</p>
+                          <p>times:</p>
+                          <p>{data.times_available}</p>
+
+                          <p>registerd to help</p>
+                          <p>{data.is_Helper == 1 ? "Yes" : "No"}</p>
                         </div>
                       ))
                     : null}
@@ -219,9 +203,7 @@ function Adminregprofile() {
                     <button onClick={edit}>submit edits</button>
                   )}
                 </div>
-
               </div>
-              
             </div>
           </div>
         </div>

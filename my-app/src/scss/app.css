@@ -384,6 +384,13 @@
   flex-direction: column;
 }
 
+.badge-main1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .badges-heading {
   text-align: center;
   color: #9b6bdf;
@@ -1545,4 +1552,13 @@
 .aduilt-avail-admin button:hover {
   border: orangered solid 2px;
   color: orangered;
+}
+
+@media screen and (max-width: 450px) {
+  .admin-pro-bottom-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=app.css.map */

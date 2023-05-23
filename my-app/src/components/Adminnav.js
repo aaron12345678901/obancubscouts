@@ -18,6 +18,11 @@ function Adminnav() {
             <Link to="/Adminregaduilts">registered adults/carers</Link>
           </li>
 
+          <li>
+            {" "}
+            <Link to="/Adminregaduilts">registered children</Link>
+          </li>
+
         </ul>
       </div>
      

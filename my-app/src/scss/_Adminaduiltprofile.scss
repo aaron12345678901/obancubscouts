@@ -107,4 +107,14 @@ width: 80%;
   }
 
 
+  @media screen and (max-width: 450px) {
+    .admin-pro-bottom-cont{
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+  }
   
