@@ -29,14 +29,14 @@ const Reg = () => {
     params.append("password", data.Password);
 
     axios
-      .get("http://localhost/php-react/register-login-php/insert.php", {
+      .get("http://localhost/php-react/oban-scouts-php/insert.php", {
         params,
       })
       .then((result) => {
         if (result.data.status == "invalid") {
           alert("invalid user");
         } else {
-          history("/Home2");
+          history("/Regawait");
         }
       });
   };

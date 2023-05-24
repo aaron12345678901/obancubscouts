@@ -2,8 +2,7 @@ import { useEffect, useRef } from "react";
 import Aduiltevents from "../../components/Aduilteventtraining";
 import React, { useState } from "react";
 import axios from "axios";
-
-import Aduiltnav from "../../components/Aduiltnav";
+import Adminnav from "../../components/Adminnav";
 
 function Admintrainingevents() {
   // save for admin upload
@@ -62,9 +61,9 @@ function Admintrainingevents() {
   });
 
   return (
-    <div className="aduilt-reg-training-nav">
+    <div className="Aduilt-nav-main">
       <div className="Aduilt-nav">
-        <Aduiltnav />
+        <Adminnav />
       </div>
 
       <div className="Aduiltprofile-main">

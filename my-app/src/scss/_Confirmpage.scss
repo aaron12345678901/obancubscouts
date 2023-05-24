@@ -1,0 +1,37 @@
+.Home-confirm{
+    background-color:#9b6bdf;
+    height: auto;
+    width: auto;
+}
+
+.heading-confirm-page{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    -webkit-text-stroke: 1.4px black; /* width and color */
+    font-size: large;
+    color: aliceblue;
+}
+
+.img-confirm-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.title-confirm h2{
+    flex-direction: column;
+    align-items: center;
+    -webkit-text-stroke: 1.4px black; /* width and color */
+  
+    color: aliceblue;
+}

@@ -34,6 +34,7 @@ import Adminchildmerits from "./pages/Admin/Adminchildmerits";
 import Admingallery from "./pages/Admin/Admingallery";
 import AdminEvents from "./pages/Admin/AdminEvents";
 import Admintrainingevents from "./pages/Admin/Admintrainingevents";
+import Regawait from "./pages/Regawait";
 
 function App() {
 
@@ -53,7 +54,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/games" element={<Games />} />
           <Route path="/Gallery" element={<Gallery />} />
-
+          <Route path="/Regawait" element={<Regawait />} />
 
 
           <Route path="/childrensprofile" element={<Childrensprofile />} />
