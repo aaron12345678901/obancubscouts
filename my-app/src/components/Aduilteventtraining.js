@@ -8,9 +8,11 @@ function Aduiltevents() {
   useEffect(() => {
     setLoading(true);
 
+    // Make a POST request to retrieve the training event data
     axios
       .post(`http://localhost/php-react/oban-scouts-php/gettrainingevent.php`)
       .then((response) => {
+        // Set the received image data in state
         setImages(response.data);
         setLoading(false);
       })
@@ -25,6 +27,7 @@ function Aduiltevents() {
       {loading && <p>Loading...</p>}
 
       <div className="aduilt-events-">
+        {/* Map over the image data and display each training event */}
         {images.map((image, index) => (
           <div key={image.id}>
             <div className="training-alignment">
@@ -48,6 +51,7 @@ function Aduiltevents() {
                   />
                 </div>
 
+                {/* Add a row separator every three events */}
                 {(index + 1) % 3 === 0 && <div className="row-separator"></div>}
               </div>
               <div className="training-border"></div>

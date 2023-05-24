@@ -4,7 +4,6 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import Adminnav from "../../components/Adminnav";
 
 function Adminchildprofile() {
-  // two states one to store user data and one to see if data is still loading
   const { id } = useParams();
   const [userData, setUserData] = useState([]);
   const [loading, setloading] = useState(false);
@@ -20,17 +19,14 @@ function Adminchildprofile() {
         { responseType: "blob" }
       )
       .then((response) => {
-        // Convert the image data to a URL and set it as the state variable
         const url = window.URL.createObjectURL(new Blob([response.data]));
         setImageSrc(url);
       })
       .catch((error) => {
-        // Log any errors to the console
         console.log(error);
       });
   }, []);
 
-  // getting users data from server using the id that was retrieved
   useEffect(() => {
     axios
       .post(`http://localhost/php-react/oban-scouts-php/get.php?id=${id}`)
@@ -45,8 +41,8 @@ function Adminchildprofile() {
     const last_name = document.getElementById("last_name").value;
     const rank = document.getElementById("rank").value;
     const term_of_service = document.getElementById("term_of_service").value;
-    const outstanding_merit =
-      document.getElementById("outstanding_merit").value;
+    const outstanding_merit = document.getElementById("outstanding_merit")
+      .value;
 
     navigate(`/Adminregaduilts`);
     setUpdating(true);

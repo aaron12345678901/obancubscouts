@@ -8,6 +8,7 @@ function Galleryelement() {
   useEffect(() => {
     setLoading(true);
 
+    // Fetching gallery images using Axios
     axios
       .post(`http://localhost/php-react/oban-scouts-php/galleryimageload.php`)
       .then((response) => {
@@ -24,6 +25,7 @@ function Galleryelement() {
     const img = new Image();
     img.src = `data:${image.type};base64,${image.content}`;
     img.onload = () => {
+      // Opening a new window and printing the clicked image
       const printWindow = window.open("", "_blank");
       printWindow.document.write(
         `<html><body><img src="${img.src}" /></body></html>`
@@ -40,6 +42,7 @@ function Galleryelement() {
       <div className="gal">
         {images.map((image, index) => (
           <div key={image.id} onClick={() => handleImageClick(image)}>
+            {/* Displaying the image and its description */}
             <img
               src={`data:${image.type};base64,${image.content}`}
               alt={image.name}

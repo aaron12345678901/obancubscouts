@@ -25,9 +25,11 @@ function Adminchildnames() {
   return (
     <div>
       {data ? (
+        // If data is available, render it as a list
         <ul>
           {data.map((item) => (
             <li key={item.id} id="list_names">
+              {/* Create a link to the profile page of each item */}
               <Link to={`/Adminchildprofile/${item.id}`}>
                 {item.first_name} {item.last_name}
               </Link>
@@ -35,6 +37,7 @@ function Adminchildnames() {
           ))}
         </ul>
       ) : (
+        // If data is not yet available, display a loading message
         <p>Loading data...</p>
       )}
     </div>

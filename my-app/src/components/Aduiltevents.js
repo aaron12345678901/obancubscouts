@@ -8,9 +8,11 @@ function Aduiltevents() {
   useEffect(() => {
     setLoading(true);
 
+    // Make a POST request to retrieve the adult events data
     axios
       .post(`http://localhost/php-react/oban-scouts-php/Aduiltevents.php`)
       .then((response) => {
+        // Set the received image data in state
         setImages(response.data);
         setLoading(false);
       })
@@ -38,6 +40,7 @@ function Aduiltevents() {
       {loading && <p>Loading...</p>}
 
       <div className="aduilt-events">
+        {/* Map over the image data and display each event */}
         {images.map((image, index) => (
           <div key={image.id} onClick={() => handleImageClick(image)}>
             <img
@@ -47,6 +50,7 @@ function Aduiltevents() {
             <div className="aduilt-events-p">
               <p>{image.description}</p>
             </div>
+            {/* Add a row separator every three events */}
             {(index + 1) % 3 === 0 && <div className="row-separator"></div>}
           </div>
         ))}

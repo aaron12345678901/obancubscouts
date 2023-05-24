@@ -3,11 +3,10 @@ import React, { useState, useEffect } from "react";
 
 function Aduilttraining() {
   // two states one to store user data and one to see if data is still loading
-
   const [userData, setUserData] = useState([]);
   const [loading, setloading] = useState(false);
 
-  // getting id from local storage and converting to a javascript object to be used
+  // getting id from local storage and converting to a JavaScript object to be used
   let id = JSON.parse(window.localStorage.getItem("id"));
 
   useEffect(() => {
@@ -25,9 +24,7 @@ function Aduilttraining() {
       <ul>
         {loading
           ? userData.map((data2) => (
-              <>
-                <li> {data2.name}</li>
-              </>
+              <li key={data2.id}>{data2.name}</li>
             ))
           : null}
       </ul>

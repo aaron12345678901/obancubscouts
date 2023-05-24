@@ -1,15 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
 import ProfilePicture from "./ProfilePicture";
 import Logout from "./Logout";
+
 function Aduiltnav() {
   return (
     <div className="Aduiltnav-main">
       <div className="profile-pic">
-        {/* <img src={profilepic} alt="" /> */}
+        {/* Display the profile picture */}
         <ProfilePicture />
       </div>
 
       <div className="name-logout">
+        {/* Display the logout button */}
         <Logout />
       </div>
 
@@ -17,19 +19,17 @@ function Aduiltnav() {
 
       <div className="Aduilt-nav-links">
         <ul>
+          {/* Navigation links for different sections */}
           <li>
-            {" "}
-            <Link to="/Aduiltprofile">my profile </Link>
+            <Link to="/Aduiltprofile">my profile</Link>
           </li>
 
           <li>
-            {" "}
-            <Link to="/Aduiltschildp"> my child</Link>
+            <Link to="/Aduiltschildp">my child</Link>
           </li>
 
           <li>
-            {" "}
-            <Link to="/Aduiltseventsreg">my events </Link>
+            <Link to="/Aduiltseventsreg">my events</Link>
           </li>
 
           <li>
@@ -37,15 +37,11 @@ function Aduiltnav() {
           </li>
 
           <li>
-            {" "}
-            <Link to="/Aduiltregdisclosure">
-              {" "}
-              register for disclosure{" "}
-            </Link>{" "}
+            <Link to="/Aduiltregdisclosure">register for disclosure</Link>
           </li>
 
           <li>
-            <Link to="/Aduiltregtraining">registerd training </Link>{" "}
+            <Link to="/Aduiltregtraining">registered training</Link>
           </li>
 
           <li>

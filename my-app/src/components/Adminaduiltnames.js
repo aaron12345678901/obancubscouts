@@ -25,9 +25,11 @@ function Adminaduiltnames() {
   return (
     <div>
       {data ? (
+        // If data is available, render it as a list
         <ul>
           {data.map((item) => (
             <li key={item.id} id="list_names">
+              {/* Create a link to the profile page of each item */}
               <Link to={`/Adminregprofile/${item.id}`}>
                 {item.first_name} {item.last_name}
               </Link>
@@ -35,6 +37,7 @@ function Adminaduiltnames() {
           ))}
         </ul>
       ) : (
+        // If data is not yet available, display a loading message
         <p>Loading data...</p>
       )}
     </div>

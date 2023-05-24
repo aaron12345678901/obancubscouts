@@ -19,7 +19,6 @@ function Uploadpicgal() {
         `http://localhost/php-react/oban-scouts-php/uploadgal.php`,
         formData
       )
-
       .then((response) => {
         console.log(response.data);
         // Handle success response from server
@@ -39,7 +38,7 @@ function Uploadpicgal() {
 
         <input type="file" onChange={handleFileChange} />
 
-        <label for="description">description:</label>
+        <label htmlFor="description">description:</label>
         <input
           type="text"
           id="description"

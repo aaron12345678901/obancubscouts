@@ -1,5 +1,4 @@
 import { Outlet, Link } from "react-router-dom";
-
 import logo from "../images/fleur-logo.png";
 
 function Header() {
@@ -18,6 +17,7 @@ function Header() {
         <div className="header-links-layout">
           <div className="first-header-links">
             <ul>
+              {/* Creating links to different routes */}
               <Link to="/">
                 <li>
                   <button>Home</button>
@@ -52,6 +52,7 @@ function Header() {
 
           <div className="reg-login">
             <Link to="Login">
+              {/* Creating a link to the Login route */}
               <p>
                 <button>Log in/Register</button>
               </p>

@@ -1,29 +1,28 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 function Admingetaduilttraining() {
-  // two states one to store user data and one to see if data is still loading
-
+  // Two states: one to store user data and one to track loading state
   const [userData, setUserData] = useState([]);
   const [loading, setloading] = useState(false);
-  const { id } = useParams();
-
-  // getting id from local storage and converting to a javascript object to be used
+  const { id } = useParams(); // Access the "id" parameter from the URL
 
   useEffect(() => {
+    // Make a POST request to get the user's training data based on the ID
     axios
       .post(
         `http://localhost/php-react/oban-scouts-php/aduiltgettraining.php?id=${id}`
       )
-      .then((response) => setUserData(response.data))
+      .then((response) => setUserData(response.data)) // Set the received user data in state
       .catch((error) => console.error(error));
-    setloading(true);
+    setloading(true); // Set loading state to true
   }, []);
 
   return (
     <div className="aduilt-training">
       <ul>
+        {/* If data is still loading, map over the user data and display it */}
         {loading
           ? userData.map((data2) => (
               <>
