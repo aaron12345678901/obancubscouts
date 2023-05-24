@@ -1,53 +1,48 @@
-.aduilt-reg-help-nav{
-    display: flex;
-    flex-direction: row;
+.aduilt-reg-help-nav {
+  display: flex;
+  flex-direction: row;
 }
 
-
-.reg-helper{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-family: Josefin Sans;
+.reg-helper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Josefin Sans;
 }
 
-.reg-helper p{
-    padding: 10px;
+.reg-helper p {
+  padding: 10px;
 }
 
-.aduilt-reg-bottom-half{
-    padding: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: Josefin Sans;
-    justify-content: center;
-    align-items: center;
+.aduilt-reg-bottom-half {
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Josefin Sans;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.aduilt-reg-bottom-half button{
-    background-color: #7c55b2;
-    width: 50%;
-   margin: 30px;
-   border-radius: 12px;
-   height: 40px;
-   border: black solid 2px;
-   font-family: Josefin Sans;
-   font-size: 1rem;
+.aduilt-reg-bottom-half button {
+  background-color: #7c55b2;
+  width: 50%;
+  margin: 30px;
+  border-radius: 12px;
+  height: 40px;
+  border: black solid 2px;
+  font-family: Josefin Sans;
+  font-size: 1rem;
 }
 
-.aduilt-reg-bottom-half button:hover{
-    border: orangered solid 2px;
-    color:orangered  ;
+.aduilt-reg-bottom-half button:hover {
+  border: orangered solid 2px;
+  color: orangered;
 }
-
-
 
 @media screen and (max-width: 650px) {
-    .aduilt-reg-help-nav{
-      display: flex;
-      flex-direction: column;
-    }
+  .aduilt-reg-help-nav {
+    display: flex;
+    flex-direction: column;
   }
-  
+}

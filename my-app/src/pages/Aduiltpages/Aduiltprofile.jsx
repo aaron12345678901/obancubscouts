@@ -111,7 +111,9 @@ function Aduiltprofile() {
                     <li>
                       {loading
                         ? userData.map((data) => (
-                            <span key={data.id}>disclosure: {data.disclosure}</span>
+                            <span key={data.id}>
+                              disclosure: {data.disclosure}
+                            </span>
                           ))
                         : null}
                     </li>

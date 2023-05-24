@@ -33,10 +33,10 @@ function Aduiltregdisclosure() {
                 scout leader to be registerd{" "}
               </p>
             </div>
-         
+
             <div className="reg-diclosure--link-btn">
-                 <a href="https://disclosures.org.uk/" rel="disclosures">
-              <button>mygov.scot</button>
+              <a href="https://disclosures.org.uk/" rel="disclosures">
+                <button>mygov.scot</button>
               </a>
             </div>
           </div>

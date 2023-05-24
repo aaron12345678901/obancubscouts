@@ -41,34 +41,31 @@
   align-items: center;
 }
 
-.Admin-disclosure{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #7c55b2;
-    min-height: 143px;
-    border: black 1px solid;
+.Admin-disclosure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #7c55b2;
+  min-height: 143px;
+  border: black 1px solid;
 }
 
-.Admin-disclosure input{
-width: 80%;
+.Admin-disclosure input {
+  width: 80%;
 }
-
-
 
 .A-aboutme input {
   width: 90%;
 }
 
-
 .admin-pro-bottom-cont {
-    display: flex;
-    flex-direction: row;
-     margin-top: 10px;
-     margin-bottom: 10px;
-  }
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .aduilt-avail-admin {
   display: flex;
@@ -79,7 +76,7 @@ width: 80%;
   border: solid black 2px;
   width: 80%;
   margin-left: 5%;
- 
+
   background-color: #7c55b2;
 }
 
@@ -89,32 +86,27 @@ width: 80%;
   text-align: center;
 }
 
+.aduilt-avail-admin button {
+  background-color: #b080f2;
+  width: 50%;
+  margin: 30px;
+  border-radius: 12px;
+  height: 40px;
+  border: black solid 2px;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+}
 
-.aduilt-avail-admin button{
-    background-color: #B080F2;
-    width: 50%;
-   margin: 30px;
-   border-radius: 12px;
-   height: 40px;
-   border: black solid 2px;
-   font-family: Josefin Sans;
-   font-size: 1rem;
+.aduilt-avail-admin button:hover {
+  border: orangered solid 2px;
+  color: orangered;
+}
+
+@media screen and (max-width: 450px) {
+  .admin-pro-bottom-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  
-  .aduilt-avail-admin button:hover{
-    border: orangered solid 2px;
-    color:orangered  ;
-  }
-
-
-  @media screen and (max-width: 450px) {
-    .admin-pro-bottom-cont{
-    
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-  }
-  
+}

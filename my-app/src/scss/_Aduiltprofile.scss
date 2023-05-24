@@ -196,38 +196,34 @@
   padding-right: 10px;
 }
 
-
-.aduilt-avail input{
+.aduilt-avail input {
   background-color: #7c55b2;
   color: white;
 }
 
-.aduilt-avail input:hover{
+.aduilt-avail input:hover {
   border: orangered solid 2px;
-  color:orangered  ;
+  color: orangered;
 }
 
-
-.aduilt-avail button{
+.aduilt-avail button {
   background-color: #7c55b2;
   width: 50%;
- margin: 30px;
- border-radius: 12px;
- height: 40px;
- border: black solid 2px;
- font-family: Josefin Sans;
- font-size: 1rem;
+  margin: 30px;
+  border-radius: 12px;
+  height: 40px;
+  border: black solid 2px;
+  font-family: Josefin Sans;
+  font-size: 1rem;
 }
 
-.aduilt-avail button:hover{
+.aduilt-avail button:hover {
   border: orangered solid 2px;
-  color:orangered  ;
+  color: orangered;
 }
-
 
 @media screen and (max-width: 650px) {
   .Aduilt-nav-main {
- 
     flex-direction: column;
   }
 }

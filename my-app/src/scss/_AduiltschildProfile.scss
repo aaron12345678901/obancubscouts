@@ -1,4 +1,4 @@
-.aduilts-childp-nav{
+.aduilts-childp-nav {
   display: flex;
   flex-direction: row;
 }
@@ -28,26 +28,21 @@
   font-weight: 100;
 }
 
-.aduilt-button-placement{
+.aduilt-button-placement {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-
 @media screen and (max-width: 540px) {
   .cprofile-first-line {
     display: flex;
     flex-direction: column;
-
   }
-
- 
 }
 
-
 @media screen and (max-width: 650px) {
-  .aduilts-childp-nav{
+  .aduilts-childp-nav {
     display: flex;
     flex-direction: column;
   }

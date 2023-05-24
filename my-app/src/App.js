@@ -31,8 +31,9 @@ import Adminregprofile from "./pages/Admin/Adminregprofile";
 import Adminchildren from "./pages/Admin/Adminchildren";
 import Adminchildprofile from "./pages/Admin/Adminchildprofile";
 import Adminchildmerits from "./pages/Admin/Adminchildmerits";
-
-
+import Admingallery from "./pages/Admin/Admingallery";
+import AdminEvents from "./pages/Admin/AdminEvents";
+import Admintrainingevents from "./pages/Admin/Admintrainingevents";
 
 function App() {
 
@@ -76,7 +77,9 @@ function App() {
           <Route path="/Adminchildren"element={<Adminchildren />}/>
           <Route path="/Adminchildprofile/:id"element={<Adminchildprofile />}/>
           <Route path="/Adminchildmerits/:id"element={<Adminchildmerits />}/>
-
+          <Route path="/Admingallery"element={<Admingallery />}/>
+          <Route path="/AdminEvents"element={<AdminEvents />}/>
+          <Route path="/Admintrainingevents"element={<Admintrainingevents />}/>
         </Routes>
 
 

@@ -8,24 +8,14 @@ import Aduiltreghelper from "../Aduiltpages/Aduiltreghelper";
 import Aduiltregdisclosure from "../../pages/Aduiltpages/Aduiltregdisclosure";
 import Aduiltregtraining from "../Aduiltpages/Aduiltregtraining";
 
-
-
-
 function Aduiltlanding() {
   return (
     <div className="Aduiltlanding-main">
-      <div className="Aduilt-nav">
-      </div>
+      <div className="Aduilt-nav"></div>
       <div className="Aduilt-content">
-
-
-
-
         <Routes>
           <Route path="/" element={<Aduiltprofile />} />
         </Routes>
-
-        
       </div>
     </div>
   );

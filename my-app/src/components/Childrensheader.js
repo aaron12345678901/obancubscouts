@@ -19,7 +19,6 @@ function Childrensheader() {
             <li>Events</li>
             <li>Games</li>
             <li>Badges</li>
-           
           </ul>
         </div>
 

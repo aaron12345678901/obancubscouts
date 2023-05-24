@@ -1,193 +1,165 @@
-.Aduiltandchild-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.Aduiltandchild-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.Aduiltandchild-main h1{
-    text-align: center;
-    text-decoration: underline;
-    font-family: Ibarra Real Nova;
-    color: #6B6B6B;
-    font-size: 50px;
-    -webkit-text-stroke: 1px black;
+.Aduiltandchild-main h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: Ibarra Real Nova;
+  color: #6b6b6b;
+  font-size: 50px;
+  -webkit-text-stroke: 1px black;
 }
-
-
-
 
 ///////////upload button ////////////
 
-.gallery-upload{
-   
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   margin-top: 5%;
+.gallery-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
 }
 
-.gallery-upload input{
-    margin: 5%;
-    background-color: #B080F2;
+.gallery-upload input {
+  margin: 5%;
+  background-color: #b080f2;
 }
 
 .gallery-upload Button {
-    box-shadow:inset 0px 1px 0px 0px #efdcfb;
-	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
-	background-color:#dfbdfa;
-	border-radius:6px;
-	border:1px solid #c584f3;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #9752cc;
+  box-shadow: inset 0px 1px 0px 0px #efdcfb;
+  background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+  background-color: #dfbdfa;
+  border-radius: 6px;
+  border: 1px solid #c584f3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #9752cc;
 }
 .gallery-upload Button:hover {
-    background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
-	background-color:#bc80ea;
+  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  background-color: #bc80ea;
 }
 .gallery-upload Button:active {
-	.myButton {
-        box-shadow:inset 0px 1px 0px 0px #efdcfb;
-        background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
-        background-color:#dfbdfa;
-        border-radius:6px;
-        border:1px solid #c584f3;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-        font-family:Arial;
-        font-size:15px;
-        font-weight:bold;
-        padding:6px 24px;
-        text-decoration:none;
-        text-shadow:0px 1px 0px #9752cc;
-    }
-    .myButton:hover {
-        background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
-        background-color:#bc80ea;
-    }
-    .myButton:active {
-        position:relative;
-        top:1px;
-    }
-    
+  .myButton {
+    box-shadow: inset 0px 1px 0px 0px #efdcfb;
+    background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+    background-color: #dfbdfa;
+    border-radius: 6px;
+    border: 1px solid #c584f3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #9752cc;
+  }
+  .myButton:hover {
+    background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+    background-color: #bc80ea;
+  }
+  .myButton:active {
+    position: relative;
+    top: 1px;
+  }
 }
-
-        
-
 
 //////////////////////////////
 
-.main-photo-container{
-width: 50%;
-background-color: #B080F2;
-height: auto;
-text-align: center;
-border: black solid 1px;
-margin-top: 5%;
-border-radius: 12%;
+.main-photo-container {
+  width: 50%;
+  background-color: #b080f2;
+  height: auto;
+  text-align: center;
+  border: black solid 1px;
+  margin-top: 5%;
+  border-radius: 12%;
 }
 
-.main-photo-heading{
-text-decoration: underline;
-font-family: Ibarra Real Nova;
-color: #6B6B6B;
-    -webkit-text-stroke: 1px black; /* width and color */
+.main-photo-heading {
+  text-decoration: underline;
+  font-family: Ibarra Real Nova;
+  color: #6b6b6b;
+  -webkit-text-stroke: 1px black; /* width and color */
 }
 
-.arrows-and-photo{
-
-display: flex;
-align-items: center;
-justify-content: center;
+.arrows-and-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-.main-photo{
-    width: 60%;
-    position: relative;
-  
-
+.main-photo {
+  width: 60%;
+  position: relative;
 }
 
-.main-photo img{
-width: 100%;
-height: 100%;
-margin-bottom:2rem ;
+.main-photo img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
 }
 
-.main-photo p{
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    color: white;
-    text-decoration: underline;
-   font-family: Ibarra Real Nova;
-   -webkit-text-stroke: 0.5px black; /* width and color */
-   font-size: 30px;
+.main-photo p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  text-decoration: underline;
+  font-family: Ibarra Real Nova;
+  -webkit-text-stroke: 0.5px black; /* width and color */
+  font-size: 30px;
 }
 
-
-
-
-.gal-second-heading{
-    text-align: center;
-    text-decoration: underline;
-    font-family: Ibarra Real Nova;
-    color: #6B6B6B;
-    font-size: 25px;
-    -webkit-text-stroke: 1px black; /* width and color */
+.gal-second-heading {
+  text-align: center;
+  text-decoration: underline;
+  font-family: Ibarra Real Nova;
+  color: #6b6b6b;
+  font-size: 25px;
+  -webkit-text-stroke: 1px black; /* width and color */
 }
-
-
-
 
 .gal {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1220px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1220px;
+}
+
+.gal div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.gal img {
+  height: 190px;
+  width: 253px;
+  border-radius: 16%;
+  border: #b080f2 2px solid;
+  box-shadow: 0px 3px 5px black;
+}
+
+.row-separator {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 573px) {
+  .main-photo-container {
+    display: none;
   }
-
-
-
-  .gal div{
-   padding: 5px;
-   cursor: pointer;
-  }
-
-  .gal img{
-    height: 190px;
-    width: 253px;
-    border-radius: 16%;
-    border: #B080F2 2px solid;
-    box-shadow: 0px 3px 5px black;
-    
-  }
-  
-  .row-separator {
-    max-width: 100%;
-    
-  }
-
-  @media screen and (max-width: 573px) {
-    .main-photo-container {
-      display: none;
-    } 
-
-  }
-
-
+}

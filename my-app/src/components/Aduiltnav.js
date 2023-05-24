@@ -6,13 +6,13 @@ function Aduiltnav() {
     <div className="Aduiltnav-main">
       <div className="profile-pic">
         {/* <img src={profilepic} alt="" /> */}
-        <ProfilePicture  />
+        <ProfilePicture />
       </div>
 
       <div className="name-logout">
-           <Logout/>
+        <Logout />
       </div>
-     
+
       <div className="nav-border"></div>
 
       <div className="Aduilt-nav-links">
@@ -53,7 +53,6 @@ function Aduiltnav() {
           </li>
         </ul>
       </div>
-     
     </div>
   );
 }

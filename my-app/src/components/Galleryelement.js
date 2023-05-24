@@ -25,7 +25,9 @@ function Galleryelement() {
     img.src = `data:${image.type};base64,${image.content}`;
     img.onload = () => {
       const printWindow = window.open("", "_blank");
-      printWindow.document.write(`<html><body><img src="${img.src}" /></body></html>`);
+      printWindow.document.write(
+        `<html><body><img src="${img.src}" /></body></html>`
+      );
       printWindow.document.close();
       printWindow.print();
     };
@@ -38,7 +40,10 @@ function Galleryelement() {
       <div className="gal">
         {images.map((image, index) => (
           <div key={image.id} onClick={() => handleImageClick(image)}>
-            <img src={`data:${image.type};base64,${image.content}`} alt={image.name} />
+            <img
+              src={`data:${image.type};base64,${image.content}`}
+              alt={image.name}
+            />
             <p>{image.description}</p>
             {(index + 1) % 3 === 0 && <div className="row-separator"></div>}
           </div>

@@ -38,27 +38,22 @@
   height: 175px;
 }
 
-
 @media screen and (max-width: 349px) {
   .aduilt-events img {
     width: 150px;
     height: 150px;
     position: absolute;
-  } 
+  }
 
-  .aduilt-events p{
+  .aduilt-events p {
     width: 50%;
     height: 50%;
   }
-
- 
 }
 
-
 @media screen and (max-width: 650px) {
-  .aduilt-events-nav{
+  .aduilt-events-nav {
     display: flex;
     flex-direction: column;
   }
 }
-

@@ -4,7 +4,6 @@ import axios from "axios";
 
 // Define a React component named "ProfilePicture"
 const ProfilePicture = () => {
-  
   // Declare state variable for image source and a setter function
   const [imageSrc, setImageSrc] = useState("");
 
@@ -13,10 +12,13 @@ const ProfilePicture = () => {
     // Send a GET request to the specified URL
 
     // getting id from local storage and converting to a javascript object to be used
-  let id = JSON.parse(window.localStorage.getItem("id"));
+    let id = JSON.parse(window.localStorage.getItem("id"));
 
     axios
-      .get(`http://localhost/php-react/oban-scouts-php/aduiltProfilepic.php?id=${id}`, { responseType: "blob" })
+      .get(
+        `http://localhost/php-react/oban-scouts-php/aduiltProfilepic.php?id=${id}`,
+        { responseType: "blob" }
+      )
       .then((response) => {
         // Convert the image data to a URL and set it as the state variable
         const url = window.URL.createObjectURL(new Blob([response.data]));

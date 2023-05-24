@@ -1,9 +1,6 @@
 import Log from "../components/Log";
 import Reg from "../components/Reg";
 
-
-
-
 function Login() {
   return (
     <div className="Login-main">
@@ -18,16 +15,16 @@ function Login() {
             experiences.
           </p>
         </div>
-            <div className="form-containers">
+        <div className="form-containers">
+          <div className="reg-container">
+            {" "}
+            <Reg></Reg>
+          </div>
 
-              <div className="reg-container"> <Reg></Reg></div>
-
-              <div className="log-container"><Log></Log></div>
-              
-               
-
-            </div>
-          
+          <div className="log-container">
+            <Log></Log>
+          </div>
+        </div>
       </div>
     </div>
   );

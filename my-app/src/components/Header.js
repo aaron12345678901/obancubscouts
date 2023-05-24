@@ -14,43 +14,51 @@ function Header() {
             <p>oban cub scouts</p>
           </div>
         </div>
-        
+
         <div className="header-links-layout">
+          <div className="first-header-links">
+            <ul>
+              <Link to="/">
+                <li>
+                  <button>Home</button>
+                </li>
+              </Link>
 
-        <div className="first-header-links">
-          <ul>
-            <Link to="/">
-              <li><button>Home</button></li>
+              <Link to="Homeevents">
+                <li>
+                  <button>Events</button>
+                </li>
+              </Link>
+
+              <Link to="Games">
+                <li>
+                  <button>Games</button>
+                </li>
+              </Link>
+
+              <Link to="Badges">
+                <li>
+                  <button>Badges</button>
+                </li>
+              </Link>
+
+              <Link to="Gallery">
+                <li>
+                  <button>gallery</button>
+                </li>
+              </Link>
+            </ul>
+          </div>
+
+          <div className="reg-login">
+            <Link to="Login">
+              <p>
+                <button>Log in/Register</button>
+              </p>
             </Link>
-
-            <Link to="Homeevents">
-              <li><button>Events</button></li>
-            </Link>
-
-            <Link to="Games">
-              <li><button>Games</button></li>
-            </Link>
-
-            <Link to="Badges">
-              <li><button>Badges</button></li>
-            </Link>
-
-            <Link to="Gallery">
-              <li><button>gallery</button></li>
-            </Link>
-
-          </ul>
-        </div>
-
-        <div className="reg-login">
-
-        <Link to="Login">
-          <p><button>Log in/Register</button></p>
-          </Link>
+          </div>
         </div>
       </div>
-
-</div>
       <div className="header-second-line">
         <div className="header-main-img"></div>
       </div>

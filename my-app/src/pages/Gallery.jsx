@@ -18,8 +18,6 @@ function Gallery() {
         </div>
       </div>
 
-     
-
       <div className="gal-second-heading">
         <h2>Past Event photos</h2>
       </div>

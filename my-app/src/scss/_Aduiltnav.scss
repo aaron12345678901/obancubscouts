@@ -1,101 +1,85 @@
-.Aduiltnav-main{
-    display: flex;
-    flex-direction: column;
-    background-color: #B080F2;
-   align-items: center;
-   height: 100%;
+.Aduiltnav-main {
+  display: flex;
+  flex-direction: column;
+  background-color: #b080f2;
+  align-items: center;
+  height: 100%;
 }
 
-
-
-.profile-pic{
-   margin: 5px;
-   width: 152px;
-   height: 160px;
-   border-radius: 50%;
-   border: solid black 2px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   overflow: hidden;
+.profile-pic {
+  margin: 5px;
+  width: 152px;
+  height: 160px;
+  border-radius: 50%;
+  border: solid black 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.profile-pic img{
-  
-    border-radius: 100%;
-    object-fit: cover;
-    border: 2px solid red;
-   
+.profile-pic img {
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid red;
 }
 
-.name-logout ul{
-    list-style-type: none;
-    color: white;
-    font-family: Josefin Sans;
-    font-size: 1.5rem;
-    
+.name-logout ul {
+  list-style-type: none;
+  color: white;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
 }
 
-
-
-.name-logout{
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-    padding-bottom: 10px;
-    margin-top: 10px;
+.name-logout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
 
-.logout_btn button{
-    padding: 2px;
-    background-color: #B080F2;
+.logout_btn button {
+  padding: 2px;
+  background-color: #b080f2;
 }
 
-.logout_btn button:hover{
-    font-size: 2rem;
+.logout_btn button:hover {
+  font-size: 2rem;
 }
 
-
-
-
-
-.nav-border{
-    width: 80%;
-    border: black solid 1px;
+.nav-border {
+  width: 80%;
+  border: black solid 1px;
 }
 
-.Aduilt-nav-links{
-    display: flex;
-    text-align: center;
+.Aduilt-nav-links {
+  display: flex;
+  text-align: center;
 }
 
-.Aduilt-nav-links ul{
-    list-style-type: none;
-    color: white;
-    font-family: Josefin Sans;
-    font-size: 1rem;
+.Aduilt-nav-links ul {
+  list-style-type: none;
+  color: white;
+  font-family: Josefin Sans;
+  font-size: 1rem;
 }
 
-
-.Aduilt-nav-links li{
+.Aduilt-nav-links li {
   padding-bottom: 20px;
   text-decoration: underline;
 }
 
-
-.Aduilt-nav-links li:hover{
-    font-size: 1.5rem;
+.Aduilt-nav-links li:hover {
+  font-size: 1.5rem;
 }
 
-#Alogout{
-    font-size: 1rem;
-    text-decoration: underline;
+#Alogout {
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
-
-#Alogout:hover{
-    font-size: 2rem;
+#Alogout:hover {
+  font-size: 2rem;
 }
-
-

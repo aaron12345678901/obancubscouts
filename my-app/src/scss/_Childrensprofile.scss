@@ -22,10 +22,8 @@
   text-align: center;
 }
 
-
-
 .profile-img {
-    border-radius: 50%;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,8 +51,7 @@
   font-weight: 500;
 }
 
-
-.cprofile_button_layout{
+.cprofile_button_layout {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -62,40 +59,35 @@
   padding-bottom: 50px;
 }
 
-
-.cprofile-button button{
-  box-shadow:inset 0px 1px 0px 0px #a4e271;
-	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
-	background-color:#89c403;
-	border-radius:6px;
-	border:1px solid #74b807;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528009;
+.cprofile-button button {
+  box-shadow: inset 0px 1px 0px 0px #a4e271;
+  background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+  background-color: #89c403;
+  border-radius: 6px;
+  border: 1px solid #74b807;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528009;
 }
 
-
 .cprofile-button button:hover {
-	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
-	background-color:#77a809;
+  background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+  background-color: #77a809;
   color: orangered;
 }
 
 @media screen and (max-width: 450px) {
-  .cprofile_button_layout{
+  .cprofile_button_layout {
     flex-direction: column;
   }
 
-  .cprofile-button button{
-margin: 5px;
+  .cprofile-button button {
+    margin: 5px;
   }
-
 }
-
-

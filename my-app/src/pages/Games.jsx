@@ -12,33 +12,33 @@ function Games() {
 
       <div className="games-main-body">
         <div className="games-first-line">
+          <a href="https://www.coolmathgames.com/0-hangman" rel="hangman">
+            <div className="first-game-container">
+              <p>Hangman</p>
 
-           <a href="https://www.coolmathgames.com/0-hangman" rel="hangman">
-          <div className="first-game-container">
-            <p>Hangman</p>
+              <img src={Game1} alt="" />
+            </div>
+          </a>
 
-            <img src={Game1} alt="" />
-          </div>
-             </a>
+          <a
+            href="https://www.bbc.co.uk/bitesize/articles/zdjkjfr"
+            rel="mathsgame"
+          >
+            <div className="second-game-container">
+              <p>math game</p>
 
-             <a href="https://www.bbc.co.uk/bitesize/articles/zdjkjfr" rel="mathsgame">
-          <div className="second-game-container">
-            <p>math game</p>
-
-            <img src={Game2} alt="" />
-          </div>
-          
+              <img src={Game2} alt="" />
+            </div>
           </a>
         </div>
 
         <div className="games-second-line">
+          <a href="https://www.mathplayground.com/logic-games.html" rel="logic">
+            <div className="third-game-container">
+              <p>logic</p>
 
-        <a href="https://www.mathplayground.com/logic-games.html" rel="logic">
-          <div className="third-game-container">
-            <p>logic</p>
-
-            <img src={Game3} alt="" />
-          </div>
+              <img src={Game3} alt="" />
+            </div>
           </a>
         </div>
       </div>

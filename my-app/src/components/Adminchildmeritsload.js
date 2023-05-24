@@ -1,12 +1,11 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
-function Childsmerits() {
+function Adminchildmeritsload() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
-
-  // getting id from local storage and converting to a javascript object to be used
-  let id = JSON.parse(window.localStorage.getItem("id"));
+  const { id } = useParams();
 
   useEffect(() => {
     setLoading(true);
@@ -60,4 +59,4 @@ function Childsmerits() {
   );
 }
 
-export default Childsmerits;
+export default Adminchildmeritsload;

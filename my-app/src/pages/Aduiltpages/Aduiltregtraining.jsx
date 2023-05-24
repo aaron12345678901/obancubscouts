@@ -2,14 +2,6 @@ import { useEffect, useRef } from "react";
 import Aduiltevents from "../../components/Aduilteventtraining";
 import React, { useState } from "react";
 import axios from "axios";
-import training1 from "../../images/trainingimages/training1.png";
-import training2 from "../../images/trainingimages/training2.png";
-import training3 from "../../images/trainingimages/training3.png";
-import training4 from "../../images/trainingimages/training4.png";
-
-//
-
-//
 
 import Aduiltnav from "../../components/Aduiltnav";
 

@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
 import Uploadpicgal from "../../components/Uploadpicgal";
 import Galleryelement from "../../components/Galleryelement";
 import gallerymain1st from "../../images/gallery/gallerymain1st.png";
+import Adminnav from "../../components/Adminnav";
 
-function Childsgallery() {
+function Admingallery() {
   return (
-    <div className="childrens-profile">
-      <div className="profile-container">
+    <div className="Aduilt-nav-main">
+      <div className="Aduilt-nav">
+        <Adminnav />
+      </div>
+
+      <div className="Admin-gal-main">
         <div className="Aduiltandchild-main">
           <h1>Gallery</h1>
+
           <div className="main-photo-container">
             <div className="main-photo-heading">
               <h1>Latest Event</h1>
@@ -36,23 +41,9 @@ function Childsgallery() {
             <Galleryelement />
           </div>
         </div>
-
-        <div className="cprofile_button_layout">
-          <div className="cprofile-button">
-            <Link to="/Childrensprofile">
-              <button>Back</button>{" "}
-            </Link>
-          </div>
-
-          <div className="cprofile-button">
-            <Link to="/Childsgallery">
-              <button>Gallery</button>{" "}
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );
 }
 
-export default Childsgallery;
+export default Admingallery;
