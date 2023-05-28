@@ -1,16 +1,17 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
-import Adminnav from "../../components/Adminnav";
+// Importing necessary dependencies and components
+import axios from "axios";  // Importing axios for making HTTP requests
+import React, { useState, useEffect } from "react";  // Importing React, useState, and useEffect from "react" package
+import { Link, useParams, useNavigate } from "react-router-dom";  // Importing Link, useParams, and useNavigate from "react-router-dom" package
+import Adminnav from "../../components/Adminnav";  // Importing the Adminnav component
 
 function Adminchildprofile() {
-  const { id } = useParams();
-  const [userData, setUserData] = useState([]);
-  const [loading, setloading] = useState(false);
-  const [imageSrc, setImageSrc] = useState("");
-  const [updating, setUpdating] = useState(false);
+  const { id } = useParams();  // Using useParams hook to get the id from the URL parameters
+  const [userData, setUserData] = useState([]);  // userData stores user data, initialized as an empty array
+  const [loading, setloading] = useState(false);  // loading represents whether data is still loading or not, initialized as false
+  const [imageSrc, setImageSrc] = useState("");  // imageSrc stores the source URL of the profile image, initialized as an empty string
+  const [updating, setUpdating] = useState(false);  // updating represents whether the profile is being updated or not, initialized as false
 
-  let navigate = useNavigate();
+  let navigate = useNavigate();  // Using useNavigate hook for programmatic navigation
 
   useEffect(() => {
     axios
@@ -20,19 +21,19 @@ function Adminchildprofile() {
       )
       .then((response) => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
-        setImageSrc(url);
+        setImageSrc(url);  // Setting the image source URL obtained from the server response
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error);  // Handling any errors that occur during the request
       });
   }, []);
 
   useEffect(() => {
     axios
       .post(`http://localhost/php-react/oban-scouts-php/get.php?id=${id}`)
-      .then((response) => setUserData(response.data))
-      .catch((error) => console.error(error));
-    setloading(true);
+      .then((response) => setUserData(response.data))  // Setting the retrieved user data in the state
+      .catch((error) => console.error(error));  // Handling any errors that occur during the request
+    setloading(true);  // Setting loading state to true
   }, []);
 
   function edit(event) {
@@ -41,11 +42,10 @@ function Adminchildprofile() {
     const last_name = document.getElementById("last_name").value;
     const rank = document.getElementById("rank").value;
     const term_of_service = document.getElementById("term_of_service").value;
-    const outstanding_merit = document.getElementById("outstanding_merit")
-      .value;
+    const outstanding_merit = document.getElementById("outstanding_merit").value;
 
-    navigate(`/Adminregaduilts`);
-    setUpdating(true);
+    navigate(`/Adminregaduilts`);  // Navigating to the specified route
+    setUpdating(true);  // Setting updating state to true
 
     axios
       .post(
@@ -56,6 +56,7 @@ function Adminchildprofile() {
           setUserData((prevData) => {
             const newData = [...prevData];
             newData.forEach((data) => {
+              // Updating the user data with the edited values
               data.first_name = first_name;
               data.last_name = last_name;
               data.rank = rank;
@@ -70,14 +71,15 @@ function Adminchildprofile() {
       })
       .catch((error) => console.error(error))
       .finally(() => {
-        setUpdating(false);
+        setUpdating(false);  
+        // Setting updating state to false
       });
   }
 
   return (
     <div className="Aduilt-nav-main">
       <div className="Aduilt-nav">
-        <Adminnav />
+        <Adminnav />  
       </div>
       <div className="admin-childrens-profile">
         <div className="admin-profile-container">
