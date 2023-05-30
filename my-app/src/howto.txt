@@ -1,0 +1,2 @@
+copy server folder contents to htdocs on the xamp folder on your device the take the data base and isert it into your sql,
+if any issues make sure file paths match on your device 
