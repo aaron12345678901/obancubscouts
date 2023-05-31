@@ -1,0 +1,1 @@
+copy all files from server folder over to htdocs folder in xampp, make sure the file paths in the axios urls,  copy the exported database located in the server folder over to mysql 
